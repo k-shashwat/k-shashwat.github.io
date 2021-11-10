@@ -1,0 +1,440 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="blogpage.css" >
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Import hover.css -->
+        <link href="hover-min.css" rel="stylesheet" media="all">
+        <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	 
+	 <!--Import icons-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 
+	 <!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+		  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+			document.getElementById("navigation").style.backgroundColor = "white";
+			document.getElementById("menu-item1").style.color = "black";
+			document.getElementById("menu-item2").style.color = "black";
+			document.getElementById("menu-item3").style.color = "black";
+			document.getElementById("menu-item4").style.color = "black";
+			document.getElementById("menu-item5").style.color = "black";
+			
+		  } else {
+			document.getElementById("navigation").style.backgroundColor = "#ffffff00";
+			document.getElementById("menu-item1").style.color = "#39a6ab";
+			document.getElementById("menu-item2").style.color = "#39a6ab";
+			document.getElementById("menu-item3").style.color = "#39a6ab";
+			document.getElementById("menu-item4").style.color = "#39a6ab";
+			document.getElementById("menu-item5").style.color = "#39a6ab";
+			
+		  }
+		}
+	</script>
+    <script>
+        $(document).ready(function(){
+            $('.test').sideNav();
+         });
+        </script>
+        <style>
+            body {
+                font-family: proxima-nova,sans-serif;
+            }
+            .vcenter {
+                margin: 0;
+                position: relative;
+                top: 45%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            @media screen and (min-width: 760px) {
+                .homeMain {
+                    height:680px;
+                }
+                .rentSafePara {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                
+            }
+            @media screen and (max-width: 760px) {
+                .homeMain {
+                    height:330px;
+                }
+                .rentSafe {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 700;
+                    padding:30px;
+                    margin:0px;
+                }
+                .rentSafePara {
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding:20px;
+                }
+            }
+        </style>
+        <script src="common1.js"></script>
+        <link rel="stylesheet" href="footer.css" >
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header.css">
+
+    </head>
+    <body>
+        <div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
+            <a href="index.html#homeMain" id="logo"  style="margin-left:40px;"></a>
+            <div class="menu" style="font-family:Graphik,sans-serif;">
+                <a href="index.html#homeMain"   class="links">Home</a>
+                <div class="links" id="linkcont1" onmouseover="expand1();" onmouseout="deExpand1()" >
+                    <a class="dlinks" id="expand"   >Services</a>
+                    <a href="index.html#menu2" class="dlinks" >Back to the future</a>
+                    <a href=" index.html#menu2" class="dlinks">Tere Liye</a>
+                    <a href="index.html#newcont" class="dlinks">We are gRoot</a>
+                </div>
+                <a href="blogPage.html"   class="links">Blog</a>
+                <div class="links" id="linkcont" onmouseover="expand();" onmouseout="deExpand()" >
+                    <a class="dlinks" id="expand" onmouseover="expand()"  >About Us</a>
+                    <a href="index.html#ourmission" class="dlinks" >Our Mission</a>
+                    <a href=" index.html#teamcontmain" class="dlinks">Our Team</a>
+                </div>
+                <a class="links" href="index.html#contactus"   >Contact Us</a>
+                <div class="hamburger" onclick="showrespmenu()"></div>
+            </div>
+            
+        </div>
+        <div class="resp-menu" style="width:100%;margin-top:0px;position:fixed">
+            <a class="resp-link" href="index.html#homeMain">Home</a>
+                <a class="resp-link" onclick="drop1()">Services</a>
+                <a class="resp-link drop1"  href="index.html#btf">Back to the future</a>
+                <a class="resp-link drop1"  href=" index.html#tl">Tere Liye</a>
+                <a class="resp-link drop1"  href="index.html#wrgrt">We are gRoot</a>
+                <a class="resp-link" href="blogPage.html">Blog</a>
+                <a class="resp-link" onclick="drop2()">Know us</a>
+                <a class="resp-link drop2"  href="index.html#aboutusrecog" >About Us</a>
+                <a class="resp-link drop2"  href="index.html#ourmissionrecog">Our Mission</a>
+                <a class="resp-link drop2"  href=" index.html#teamcontmain">Our Team</a>
+                <a class="resp-link"   href="index.html#contactus">Contact Us</a>
+        </div>
+    
+        
+        <div class="main-container" style="margin-top: 70px;">
+            <div class="landingScreen"></div>
+            <div class="major-sect" >
+
+                <img style="height: auto;width:100% !important" src="reliance.png">
+                <h2 id="heading" style="font-weight: 600;margin-bottom: 20px;text-align:center;color:#6d9eeb">Mukesh Ambani’s Reliance Working From Home </h2>
+                <div class="sub-cont" style="text-align: center;display:flex;flex-flow:column" >
+                    <h5 style="text-align: center;width:100%">Mukesh Ambani surpasses Elon Musk to become the 5th richest man in the world and there are no signs of slowing down for this man. <br></h5>
+                    <br>
+                    <h6 style="text-align: center;width:100%;color:#6d9eeb;font-weight:bold;font-style:italic">Aman Priyaraj | NurtureCult | 14th August 2020</h6>
+                </div>
+                
+                <div class="content" style="font-size:0.8em">
+                    <ul >
+                        <li style="display: list-item;">Ambani just raised 40 thousand crores from the RIL Rights Issue and with the spur of money coming in from Facebook, Google and other private investors Reliance have now piled a mountain of cash. </li>
+                        <li style="display: list-item;">Reliance first-ever online-only Annual General Meeting laid the foundation for the lucrative Jio dreams but what does all of this mean for India against its trade war with China?</li>
+                        <li>Why is everyone buying Reliance stocks? How many digits does Mukesh Ambani’s Net Worth have?</li>
+                    </ul>
+                    For most of us, the past few months have passed with an eye blink and all we have done is gained weights and lost creativity. Meanwhile, Mukesh Ambani has turned the tables for his company, created a fortune for himself and is on his way to destroy the dragon’s trade dominance in India, single-handedly. I mean all of us remember in what a mess the company was before the lockdown, with a gigantic amount of debt crushing the hopes of the company. So what just happened? Mukesh Ambani defied all the odds yet again by piling up enough cash to back its debt.
+                    <br><br>
+                    It’s been no secret that Mukesh Ambani has been trying to reduce the debt burden at Reliance Industries Ltd for a while now. He had promised to make RIL net debt-free by 2021 i.e. the company would still have some debt, but they’d have more than enough cash to cover for it. He did not disappoint. He got the impossible done with a year to spare. 
+                    <br><br>
+                    So let us go chronologically. It all started div Facebook shelled out $5.7 Billion to acquire a 9.99% stake in Reliance Jio and this investment knocked up the value of Mukesh Ambani’s star-child to almost $66 Billion. Now, what is there in store for Facebook in this deal. Why would they spend such an enormous sum of money? Well for starters Facebook wants to monopolize the internet and for that, they need to go through the tough regulatory hurdles of India. In a quest to capture India’s burgeoning potential, Facebook launched Free Basics back in 2015. The idea was to make Facebook a gateway to the internet for first-time users, by providing certain apps for free. Well, this did not work out due to the strict regulations imposed on the foreign company. The very same year, Reliance Jio made a splash by barging into the Indian telecom industry with extremely low tariffs and cheap data plans. It was just surreal. Jio shook the very fundamentals of India’s telecom industry and added 388 million subscribers. Unfortunately, Jio had to borrow exorbitant sums of money to build the infrastructure needed to facilitate the company’s massive endeavour. This created debt, 40 thousand crores of debt. So the equation is simple, Facebook wants to get a piece of the Indian customers and Reliance wants to clear their debt. It is not limited to this. The possibilities are unlimited. Facebook has shown obvious interests in WhatsApp Pay and Reliance has also been open about their ambitious plan to create Jio Mart. With JioMart, Reliance wants to connect thousands of Kirana stores via the Internet. They want them to accept orders online and cater to a much larger audience. Now obviously you could just build an app and force consumers and store owners to transact on this new platform. Instead, if you introduce something more familiar, you could increase adoption and engagement rates almost instantaneously. People take an instant liking to something they already know. It’s called the mere-exposure effect ,  a psychological phenomenon. So if Jio was looking to introduce new products and wade into uncharted territories, it would be better off piggybacking on something more familiar. Something like WhatsApp.
+                    <div style="display: flex;flex-flow:row wrap;justify-content:space-between;margin:30px 0px">
+                        <img style="max-width: 48%;height:auto" src="jio1.png">
+                        <img style="max-width: 48%;height:auto" src="jio2.jpg">
+                    </div>
+                    Now that Facebook was on board and Mukesh Ambani became Asia’s richest man, everyone all of a sudden started expecting miracles from this duo. This caused Reliance acquiring plenty more investments. The investors included Silver Lake, Vistara Equity, General Atlantic, KKR, Mubadala, ADIA, TPG, L Catterton, PIF, Intel, Qualcomm and of course the big gun Google which we will talk about later.
+                    <br><br>
+                    Well, this is not it for the ambitious Ambanis. He had his back-up plan ready as well. The company had planned to issue 41 crore new shares at a discount of 14%. To make it more appealing, Reliance was offering a discount. But not everybody can subscribe to the rights issue. You can only be a part of this if you owned Reliance stocks. And if you owned Reliance shares as on April 30th then you’ll be entitled to one new share for every 15 shares held in the company. All at a discounted price of ₹1257. But what if you don’t have the money to buy these new shares? Or what if you simply don't care about the rights issue. Well, in that case, somebody else will buy the issue instead. RIL is expected to raise close to ₹53,125 crores through this little program.
+                    <br><br>
+                    So what does a stock investor do when he sees a company who just received over 1.5 lakh crores of investment, whose promoter group is the Ambani family and whose balance sheet is showing nothing but future prospects? He goes looooonnnnngggg on the stock. This is what has happened with the RELIANCE stocks. They are shooting up with frequent corrections. They are achieving an all-time-high every day. In a time when markets have lost all hopes, Ambani like a bull is pushing the Nifty and Sensex back to its pre-COVID values. Here is a snapshot of its prices in the last 6 months.
+                    <br><br>
+                    <img style="width: 100%;height:auto" src="graph.png">
+                    <br>
+                    After all these surreal successes, Reliance had its first-ever only-only Annual General Meeting on the 15th of July, 2020. It started off with a bang when: they acquired yet another massive investment of 34 thousand crores from Google as part of its India Digitization Fund. It is interesting to notice that Google managed to get this 7.7% stake at a discount but why, you may ask? It is because of the nature of the deal. It is not just an investment, it is a strategic partnership in which they help each other grow. Google just like Facebook has got much more than just money into the deal. As Google CEO Sundar Pichai noted : “Google and Jio Platforms have entered into a commercial agreement to jointly develop an entry-level affordable smartphone with optimizations to the Android operating system and the Play Store. Together we are excited to rethink, from the ground up, how millions of users in India can become owners of smartphones.” This is an attempt to drive smartphone penetration in the country. It’s an attempt to build a phone that could potentially unlock new opportunities and boost data consumption. You can’t just stick a regular Android smartphone and expect rural consumers to take a liking to it. They have different aspirations. They have different needs. A rural person needs basic stuff in the easiest way. Google’s plethora of tools and apps are rendered useless in such locality. A 2G phone works for them because it serves its purpose. So, Google wants to access customers in such locality and Mukesh Ambani wants to make the country ‘2G Mukt’. There you have your partnership. Both of them are quintessential to each other’s cause.
+                    
+
+
+
+
+
+
+                </div>
+               <!-- <div class="strip1">
+                &#128149 Liked by Lily And 4 other people 
+               </div> -->
+               <div class="strip2">
+                <div class="prev">
+                    <div class="prev-icon"></div>
+                    <div class="prevcont">
+                        <div class="prevLabel">Previous Post</div>
+                        <div class="prev-title"></div>
+                    </div>
+                </div>
+                <div class="prev">
+                    <div class="prev-icon"></div>
+                    <div class="prevcont">
+                        <div class="prevLabel">Next Post</div>
+                        <div class="prev-title"></div>
+                    </div>
+                </div>
+               </div>
+               <!-- <div class="comm-cont">
+                   <div class="icon"></div>
+                   <div class="comment">
+                       <div class="text">the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</div>
+                       <div class="name">Rishi</div>
+                   </div>
+               </div>
+               <div class="comm-cont">
+                   <div class="icon"></div>
+                   <div class="comment">
+                       <div class="text">the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</div>
+                       <div class="name">Rishi</div>
+                   </div>
+               </div>
+               <div class="comm-cont">
+                   <div class="icon"></div>
+                   <div class="comment">
+                       <div class="text">the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</div>
+                       <div class="name">Rishi</div>
+                   </div>
+               </div>
+               <div class="comm-cont">
+                   <div class="icon"></div>
+                   <div class="comment">
+                       <div class="text">the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</div>
+                       <div class="name">Rishi</div>
+                   </div>
+               </div>
+               <div class="comm-cont">
+                   <div class="icon"></div>
+                   <div class="comment">
+                       <div class="text">the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</div>
+                       <div class="name">Rishi</div>
+                   </div>
+               </div> -->
+
+               <h4>Leave a reply</h4><br>
+               <form style="height: 300px;">
+                   <input id="cname" placeholder="Name" name="name">
+                   <input id="cemail" placeholder="email" name="E-mail">
+                   <textarea id="ccomment" style="height: 100px;padding:10px;margin-top:10px;box-sizing:border-box" name="comment"  placeholder="Write Comment"></textarea>
+                   <div id="validaterror1" style="color:rgb(204, 0, 0);display:none;margin:5px;padding-left:10px;width:100%">Please fill the highlighted fields.</div>
+                   <div id="success" style="color: green;display:none;margin:5px;width:100%">Thank you! We will contact you soon.</div>
+                   <div onclick="commentsubmit()"  style="cursor:pointer;width: min-content;margin-top:10px;margin-right:10px;border-radius:10px;background-image:none;background-color:rgb(46, 46, 46);padding: 10px 20px" class="search">
+                        Submit
+                   </div>
+               </form>
+
+            </div>
+
+            
+            <div class="minor-sect">
+                <!-- <div class="searchCont">
+                    <div class="search-cont">
+                        <input name="search" type="text" placeholder="Search a keyword">
+                    </div>
+                    <div class="search waves-effect waves-light  modal-trigger"  >SUBMIT</div>
+                </div>
+                <div class="categories">
+                    <div class="cat-head">Category</div>
+                    <div class="cat">Category </div>
+                    <div class="cat">Category </div>
+                    <div class="cat">Category </div>
+                    <div class="cat">Category </div>
+                    <div class="cat">Category </div>
+                </div>
+                <div class="rec-posts">
+                    <div class="rec-head">Recent Posts</div>
+                    <div class="min-post">
+                        <div class="pic2"></div>
+                        <div class="info-cont">
+                            <div class="min-head">Title</div>
+                            <div class="past">X days Ago</div>
+                        </div>
+                    </div>
+                    <div class="min-post">
+                        <div class="pic2"></div>
+                        <div class="info-cont">
+                            <div class="min-head">Title</div>
+                            <div class="past">X days Ago</div>
+                        </div>
+                    </div>
+                    <div class="min-post">
+                        <div class="pic2"></div>
+                        <div class="info-cont">
+                            <div class="min-head">Title</div>
+                            <div class="past">X days Ago</div>
+                        </div>
+                    </div>
+                    <div class="min-post">
+                        <div class="pic2"></div>
+                        <div class="info-cont">
+                            <div class="min-head">Title</div>
+                            <div class="past">X days Ago</div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="newsletter-cont" style="text-align: left;" >
+                    <span class="news-head" style="width: 100%;color:black">Subscribe to newsletter</span>
+                    <input name="entry.1506121739" id="newsletter" type="email" required placeholder="Enter E-mail">
+                    <div id="validaterror" style="color: red;display:none;margin: 0px;font-size:15px;width:100%">Please fill the  field.</div>
+                    <div id="success" style="color: rgb(22, 22, 22);font-weight:800;display:none;margin:0px;font-size:15px;width:100%">See you in the mailbox!</div>
+        
+                    <div onclick="newslettersubmit()" style="max-width: max-content;padding:10px"class="search waves-effect waves-light  modal-trigger">
+                        SUBSCRIBE
+                    </div>
+                </div>
+                <div class="tags-menu">
+                    <a class="tag-head">Tags</a>
+                    <a class="tag">Finance</a>
+                    <a class="tag">Reliance</a>
+                    <a class="tag">Facebook</a>
+                    <a class="tag">Stock Market</a>
+                    <a class="tag">Lockdown</a>
+                    <a class="tag">Investment</a>
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- Footer -->
+	<footer class="page-footer" style="background-color:#4b555f">
+		<div class="" style="width:90%;margin:auto;">
+		  <div class="row hide-on-small-only" style="display: block;">
+			  <div class="col s6 m6 f-resp-m" style="margin-top: 0px;">
+				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
+				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				</p>
+			  </div>
+			  <div class="col s6 m3 f-resp-l" style="margin-top: 0px;">
+				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
+				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				</p>
+			  </div>
+			  <div class="col s4 m3 ">
+				  <p class="footheaders" style="color:#F1C40F;padding-top:25px" > EXPLORE </p>
+				  <div class="row" style="display:block">
+				  <div class="col s6 explore-ll" style="height:min-content">
+					  <ul>
+						  <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
+						  <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+						  <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+						  <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li>
+					  </ul>
+				  </div>
+				  <div class="col s6 explore-ll">
+					  <ul>
+						  <li><a class="footerLink" href="blogPage.html">BLOG</a></li>
+						  <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
+						  <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
+					  </ul>
+				  </div>
+				  <div class="col s explore-l">
+					<ul>
+						<li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
+						  <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+						  <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+						  <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li><li><a class="footerLink" href="blogPage.html">BLOG</a></li>
+						<li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
+						<li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
+					</ul>
+				</div>
+
+				  </div>
+			  </div>
+			  <div class="col s6 m2 f-resp-m">
+				<p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				<p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+					support@nurturecult.com
+				</p>
+				<p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+				<div class="row " ></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			  
+				</div>
+			  <div class="col s6 m2 f-resp-l">
+				<p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				<p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+					support@nurturecult.com
+				</p>
+				
+				</div>
+				<div class="col s12 m3 hide-on-med-and-down f-resp-l">
+				<p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+				<div class="row " ></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			  </div>
+
+			</div>
+				<div class="col s12 m4 hide-on-med-and-up" style="margin-top: 0px;">
+					<h3 style="font-family: sansa;">NurtureCult</h3>
+					<p style="color:#c6c6c6;padding-top:25px">
+					  Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				  </p>
+				</div>
+				<div class="col s12 m2 hide-on-med-and-up">
+				  <p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				  <p class="phs" style="color:#c6c6c6;"> +91 (80) 30682559 <br>
+				  +91 (80) 33682560 <br>
+				  info@clustr.co.in
+				  </p>
+				  </div>
+
+
+		</div>
+		<div class="footer-copyright" style="padding:0px 0px;padding-right:10px">
+
+		  <div style="display: flex;flex-flow:row;margin:auto;justify-content:space-between;max-width: 1370px;width:89%">
+			  <div  style="font-size:0.7em;display:flex;flex-flow:row;min-width:max-content;align-items:center">
+				  <span class="hide-on-small-only">© 2020 NurtureCult. All rights reserved</span>
+				  &nbsp;&nbsp;
+				  <a href="T&C.html" style="text-decoration: underline;">Terms and Conditions</a>
+				  &nbsp;&nbsp;
+				  <a href="PrivacyPolicy.html" style="text-decoration: underline;">Privacy Policy</a>
+				</div>
+				  <div class="" style="display:flex;flex-flow:row nowrap;">
+					  <div class="f-logos hide-on-small-only" style="border-radius:0px;background-image:url(master.png)"></div>
+					  <div class="f-logos hide-on-small-only" style="border-radius:0px;background-image:url(visa.png)"></div>
+					  <div class="f-logos hide-on-small-only" style="background-image:url(gpay2.jpg)"></div>
+					  <div class="f-logos hide-on-small-only" style="background-image:url(paytm2.jpg)"></div>
+					  <div class="f-logos hide-on-small-only" style="background-image:url(upi2.jpg)"></div>
+				  </div>
+				  <div  style="display:flex;flex-flow:row nowrap;">
+					  <a href="https://facebook.com/nurturecult" class="f-logos" style="height:25px;width:25px;background-image:url(fb2.jpg)"></a>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(insta2.jpg)"></div>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(linkedin2.jpg)"></div>
+				  </div>
+		  </div>
+	  </div>
+  </footer>
+      <script src="common1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="newsletter.js"></script>
+        <script src="comment.js"></script>
+    </body>
+
+</html>

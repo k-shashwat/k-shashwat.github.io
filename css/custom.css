@@ -1,0 +1,169 @@
+.grid-item {
+		  height:300px;
+		  font-size: 30px;
+		  text-align: center;
+		  margin:25px 30px;
+		  margin-bottom:10px;
+		}
+		img {
+			transition: all 0.5s;
+
+			border-radius:3px;
+			}
+		
+		.grid-content {
+			opacity:0.8;
+			position: relative;
+			top:-130px;
+			display:block;
+			color: black;
+		}
+		.grid-header {
+			font-family: 'Maven Pro',sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			margin:0px;
+		}
+		.grid-data {
+			font-family: 'Maven Pro',sans-serif;
+			font-size: 14px;
+			margin:0px;
+
+		}
+		
+		.grid-item:hover img{
+			opacity: 0.4;
+			transform: scale(1.05);
+
+			
+		}
+		
+		.grid-item:hover .grid-content{
+			opacity: 1;
+		}
+		
+		.team.fa {
+			padding: 10px;
+			font-size: 15px;
+			text-align: center;
+			text-decoration: none;
+			margin:0px;
+			border-radius: 50%;
+			color:white;
+			background: #007bb5;
+		}
+		
+		@media screen and (max-width: 760px) {
+		.grid-container {
+			display: grid;
+			grid-template-columns: 5% 45% 45%;
+			padding: 10px;
+			margin:0px;
+			max-height:240px;
+			}
+		.grid-item {
+			margin:10px;
+			max-height:200px;
+			}
+		.grid-item.extra {
+			display: none;
+			}
+		.grid-item.notExtra {
+			display: block;
+			}
+		}
+		
+		
+		
+#exampleSlider {
+  position: relative;
+  width:100%;
+  margin:auto;
+  padding:20px;
+}
+@media (max-width: 767px) {
+  #exampleSlider {
+    border-color: transparent;
+  }
+}
+#exampleSlider .MS-content {
+  margin: 5px 5%;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+@media (max-width: 767px) {
+  #exampleSlider .MS-content {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #exampleSlider {
+	width:90%;
+	margin:auto;
+  }
+}
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  padding:20px;
+  width: 33.333%;
+}
+@media (max-width: 1200px) {
+  #exampleSlider .MS-content .item {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 992px) {
+  #exampleSlider .MS-content .item {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 767px) {
+  #exampleSlider .MS-content .item {
+    width: 50%;
+  }
+}
+#exampleSlider .MS-content .item p {
+  
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0;
+  padding: 10px 0;
+}
+#exampleSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  color:black;
+  outline: 0;
+  top: 155px;
+}
+@media (max-width: 767px) {
+  #exampleSlider .MS-controls button {
+    display: none;
+  }
+}
+#exampleSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+#exampleSlider .MS-controls .MS-left {
+  left: 10px;
+}
+@media (max-width: 992px) {
+  #exampleSlider .MS-controls .MS-left {
+    left: -2px;
+  }
+}
+#exampleSlider .MS-controls .MS-right {
+  right: 10px;
+}
+@media (max-width: 992px) {
+  #exampleSlider .MS-controls .MS-right {
+    right: -2px;
+  }
+}

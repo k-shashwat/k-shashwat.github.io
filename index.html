@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+     <!-- Compiled and minified CSS -->
+
+	 <!--Import icons-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+	 <link rel="stylesheet" href="header.css">
+	 <link rel="stylesheet" href="footer.css">
+	 <link rel="shortcut icon" href="../favicon.ico">
+	 <!-- jquery -->
+	<script src="jquery.min.js"></script>
+	<script src="jquery.hover3d.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="header.css">
+	<script>
+		document.getElementById("svg").style.opacity ="0"
+		function expand1(){
+			document.getElementById("linkcont1").style.overflow = "visible";
+		  }
+		  function deExpand1(){
+			document.getElementById("linkcont1").style.overflow = "hidden";
+		  }
+		function expand(){
+			document.getElementById("linkcont").style.overflow = "visible";
+		  }
+		  function deExpand(){
+			document.getElementById("linkcont").style.overflow = "hidden";
+		  }
+	</script>
+
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+		body {
+			font-family: proxima-nova,sans-serif;
+			overflow-y: scroll  ;
+			-webkit-overflow-scrolling: touch;
+		}
+		body *{
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+			font-family: font;
+
+		}
+		a{
+			color: black;
+		}
+		@font-face {
+			font-family: font;
+			src: url(font.ttf);
+		}
+		@font-face {
+			font-family: sansa;
+			src: url(Sansation-Bold.ttf);
+		}
+		@font-face {
+			font-family: adam;
+			src: url(ADAM.CG\ PRO.otf);
+		}
+		@font-face {
+			font-family: anson;
+			src: url(anson-regular-webfont.ttf);
+		}
+		@font-face {
+			font-family: komoda;
+			src: url(Komoda.otf);
+		}
+		@font-face {
+			font-family: goth;
+			src: url(league-gothic-master/LeagueGothic-CondensedRegular.otf);
+		}
+		.navbar-fixed{
+			background-color: rgba(255, 255, 255, 1);
+			font-weight: 700;
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			z-index: 1000;
+			transition: none;
+		}
+		.navbar-fixed *{
+			transition: none;
+		}
+
+		.hovercont{
+			width: 100%;
+			min-height: 70vh;
+			height: fit-content;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 0px;
+		}
+		.car-cont{
+			width:fit-content;
+			height:fit-content;
+		}
+		.screen{
+			height: fit-content;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			padding: 40px;
+			flex-flow: column nowrap;
+		}
+		.screen2{
+
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 30px;
+			padding-bottom: 40px !important;
+			flex-flow: column nowrap;
+		}
+		.screen:nth-child(2){
+			flex-flow: row;
+		}
+		#ourteam{
+			height: 600px;
+		}
+
+		.writingspace{
+			display: flex;
+			width: 90%;
+			max-width: 1200px;
+			height:40%;
+			padding: 0px;
+			justify-content: center;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		}
+		.writingspace *{
+			transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		.writeups{
+			display: flex;
+			flex-flow: column;
+			position: absolute;
+			opacity: 0;
+			width: 70%;
+			height: 20%;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.stall{
+			opacity: 1;
+			transition: 0.5s ease-in !important;
+		}
+		.facesCont{
+			display: flex;
+			width: 100%;
+			height:30%;
+			justify-content: center;
+			align-items: center;
+		}
+		.face{
+			width: 50px;
+
+			height: 50px;
+			background-color: grey;
+			margin: 10px;
+			opacity: 0.5;
+			border-radius: 50px;
+			box-shadow: 0px 0px 3px 1px black;
+			transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		}
+		.stitle{
+			width: 70%;
+			margin-bottom: 30px;
+			display: flex;
+			justify-content: center;
+
+		}
+		.scont{
+			opacity: 0;
+			min-height: 450px;
+			padding: 30px;
+			height: fit-content;
+			border-radius: 15px;
+			text-align: center;
+			width: 410px;
+			margin: 20px;
+			background-color: rgb(248, 248, 248);
+			font-size: 19px;
+		}
+		.scont:hover{
+			box-shadow: -5px 5px 5px 0px lightgray;
+			transform: translate(5px,-5px);
+		}
+
+
+		.hovers{
+			width: 32vw;
+			height: 25vw;
+			min-height: 200px;
+			min-width: 200px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+
+			align-items: center;
+		}
+		.hovers a{
+			height: 80%;
+			width: 80%;
+			background-image: url(test.jpg);
+			background-position: center;
+			background-size: cover;
+			background-color: #7b53c1;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.vcenter {
+			margin: 0;
+			position: relative;
+			top: 45%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		.row1{
+			display: flex;
+			height: 100%;
+			min-width: 100%;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+
+		.imgcont:hover{
+			transform: scale(1.1);
+		}
+		.imagecont{
+			opacity: 0;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		.wrapper{
+			display: flex;
+			flex-flow: column;
+			width: 500px;
+			padding: 30px;
+			height: fit-content;
+			justify-content: center;
+			align-items: center;
+		}
+		.hover-in{
+			transition: .3s ease-out;
+		}
+		.hover-out{
+			transition: .3s ease-in;
+		}
+		.logoCont{
+			padding:60px;
+			display:flex;
+			flex-flow:row;
+			justify-content:space-between;
+			background-color:rgba(211, 211, 211, 0.274)
+		}
+		.imgcont{
+			width: 480px;
+			height: 320px;
+			border-radius: 10px;
+			box-shadow: 0px 10px 30px 0px rgb(61, 61, 61) ;
+			background-image: url(15766.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		.carousel{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 400px;
+			width: 100%;
+			opacity: 0;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+
+		.car-cont{
+			display: flex;
+			width:fit-content;
+			justify-content: center;
+			align-items: center;
+		}
+		video{
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px 0px #302d1498;
+
+		}
+
+		.carEl{
+			width: 340px;
+			height: 320px;
+			max-width: 340px;
+			max-height: 320px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px 3px lightgray;
+			background-size: cover;
+			background-position: center;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		#car1{
+			background-image: url(2.jpg);
+			transform: translateX(100%);
+
+		}
+		#car2{
+			background-image: url(3.jpg);
+			z-index: 100;
+		}
+		#car3{
+			background-image: url(card.jpg);
+			transform: translateX(-100%);
+
+		}
+		#car1,#car3{
+			width: 280px;
+			height: 210px;
+		}
+		.brand-logo{
+			background-image: url(logo.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+		#imgcont1{
+			background-image: url(left.jpg);
+
+
+		}
+		.search{
+			padding: 10px;
+			margin: 10px;
+			border-radius: 9px;
+			text-align: center;
+			color: white;
+			width: fit-content;
+			position: relative;
+			background-color: #2ECC71;
+			box-shadow: -2px 2px 5px 0px rgb(36, 36, 36);
+			left: 100%;
+			transform: translateX(-100%);
+
+
+		}
+		.search2{
+			padding: 10px 20px;
+			margin: 10px;
+			border-radius: 100px;
+			text-align: center;
+			font-size: 15px;
+			color: white !important;
+			cursor: pointer;
+			width: fit-content;
+			display: flex;
+			bottom: 0px;
+			font-weight: 900;
+			position: relative;
+			text-decoration: none;
+			background-color: rgb(29, 29, 29);
+			box-shadow: -2px 2px 10px 0px rgb(94, 94, 94);
+
+
+		}
+		.search3{
+			padding: 10px 20px;
+			margin: 10px;
+			border-radius: 400px;
+			text-align: center;
+			color: white;
+			width: fit-content;
+			display: flex;
+			border: 1.5px rgba(240, 255, 255, 0.418) solid;
+			font-weight: 900;
+			font-size: 20px !important;
+			margin-right: 100px;
+			background-color: rgb(29, 29, 29);
+			box-shadow: 0px 0px 10px 0px rgba(161, 161, 161, 0.589);
+
+
+		}
+		.imgcont, .textcont{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			text-align: center !important;
+			transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		}
+
+		.textcont{
+			height: fit-content;
+			justify-content: space-between;
+			min-height: 570px;
+		}
+		.tcard{
+			width: 240px;
+			margin: 30px 50px;
+			border-radius: 6px;
+			height: 320px;
+			border: 3px solid rgba(211, 211, 211, 0.5);
+			overflow: hidden;
+		}
+		.tcard:hover{
+			transform: scale(1.05);
+			border: 1px solid rgba(211, 211, 211, 0.404);
+			box-shadow: -2px 2px 20px 0px lightgray;
+			padding-bottom: 20px;
+		}
+		.tscr1,.tscr2{
+			width: 234px;
+			height: 320px;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column;
+		}
+		.tscr2{
+			opacity: 0;
+		}
+		.tface{
+			background-color: #e9d6002c;
+			width: 100%;
+			height: 100%;
+			margin-bottom: 30px;
+
+		}
+		.tname{
+			z-index: -1;
+			position:relative;
+			top:-20px;
+
+		}
+
+
+
+		.textcont{
+			max-width: 550px;
+			min-width: 580px;
+			width: 400px;
+			margin: 80px;
+			margin-bottom: 0px;
+			margin-top: 20px;
+			opacity: 0px;
+		}
+		.textcont *{
+			text-align: center !important;
+		}
+		<!--  -->
+
+		.card-cont{
+			display: flex;
+			flex-flow: column;
+			height: min-content;
+			align-items: center;
+			padding-bottom: 40px;
+		}
+		.card-cont div{
+			display: flex;
+			flex-flow: row nowrap;
+			padding: 30px;
+			width: fit-content;
+
+		}
+		.hcard{
+
+			width: 300px;
+			max-width: 100%;
+			height: 200px;
+			cursor: pointer;
+			border-radius: 10px;
+			background-position: center;
+			background-size: cover;
+			margin: 10px 20px;
+			padding: 0px;
+			transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+			opacity: 0;
+		}
+		.hcard:hover .hcont{
+			opacity: 1;
+		}
+		.hcont{
+			background-color: rgba(0, 0, 0, 0.699);
+			min-width: 300px;
+			width: 100%;
+			height: 200px;
+			display: flex;
+			border-radius: 10px;
+			margin: 0px;
+			padding: 0px;
+			flex-flow: column;
+			justify-content: center;
+			align-items: flex-start;
+			color: white;
+			opacity: 0;
+			backdrop-filter: blur(1px);
+		}
+		.hcont div{
+			display: flex;
+		}
+
+		.hcard:nth-child(2){
+			transform: translateX(-330px);
+		}
+		.hcard:nth-child(3){
+			transform: translateX(-660px);
+		}
+		.logo{
+			font-weight: 700;
+			opacity: 0.6;
+			transition: 0.5s ease;
+			padding:20px;
+			width: fit-content;
+			height: 70px;
+			text-align:center;
+			font-size:15px;
+			font-family: adam;
+		}
+
+		.logo:hover{
+			opacity: 1;
+			color: #F1C40F;
+			text-shadow: 0px 0px 10px #ffea00c7;
+		}
+		.logos{
+			width:100%;
+			display:flex;
+			flex-flow:row;
+			justify-content:center;
+			align-items:center;
+		}
+
+		#personal,#coll,#mission,#teaam,#career,#tteam,#newtxt{
+			border-right: 2px solid black;
+			width: fit-content;
+			align-self: center;
+			color: rgb(34, 34, 34);
+			animation: blink-caret .75s step-end infinite;
+			opacity: 1;
+		}
+
+
+		  /* The typewriter cursor effect */
+		  @keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: black; }
+		  }
+
+
+		@media screen and (min-width: 760px) {
+			.homeMain {
+				height:680px;
+			}
+			.rentSafePara {
+				padding-top: 10px;
+				line-height: 24px;
+			}
+
+			.footerSide {
+				margin-top:80px;
+				padding:10px;
+				}
+		}
+		@media screen and (max-width: 760px) {
+			.homeMain {
+				height:330px;
+			}
+			.rentSafe {
+				font-weight: 700;
+				padding:30px;
+				margin:0px;
+			}
+			.rentSafePara {
+				line-height: 22px;
+				padding:20px;
+			}
+			.para{
+				opacity: 0;
+			}
+			.logoo{
+				display:flex;
+				flex-flow:column;
+				width:fit-content;
+				height:100%;
+				align-items:center;
+			}
+		}
+		.row{
+			max-width: 1300px;
+			display: flex;
+			justify-content: center;
+		}
+		#careers{
+			padding-bottom: 100px ;
+		}
+		.links, .dlinks{
+			color: #737373;
+			background-color:#f5f5f5;
+		}
+		#nav11,#nav11 *{
+			background-color: #ffffff;
+		}
+
+
+		.homeMain{
+
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			height: 100vh;
+			width: 100%;
+			background-position: center;
+			background-repeat: none;
+			background-size: cover;
+		}
+
+		.footerLink {
+			color: #C6C6C6;
+			font-family: 'Maven Pro',sans-serif;
+			font-size: 14px;
+		}
+		footer *{
+			color: #C6C6C6;
+		}
+		.fa {
+		  padding: 15px;
+		  font-size: 15px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 10px;
+		  border-radius: 50%;
+		  color:black;
+		  background-color: black;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+			color:#f4d03f;
+		}
+		.fa-facebook {
+			background: #3B5998;
+		}
+		.fa-instagram {
+			background: #125688;
+		}
+		.fa-linkedin {
+			background: #007bb5;
+		}
+		.postSpace, .inputSpace{
+			display: flex;
+			box-sizing: border-box;
+			margin: 0px auto;
+			flex-flow: column;
+		}
+		.inputSpace *{
+			font-size: 15px;
+		}
+
+
+
+
+		.search{
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			text-align: center;
+			color: white;
+			font-size: medium;
+			background-color: #2ECC71;
+			box-shadow: -2px 2px 5px 0px rgb(36, 36, 36);
+
+		}
+		.infocont{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			padding: 50px 30px 30px 30px;
+
+		}
+
+	</style>
+
+
+	</head>
+
+   <body onload="showstall();drawsvg();">
+	<div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
+		<a href="index.html#homeMain" id="logo"  ></a>
+		<div class="menu" style="font-family:Graphik,sans-serif;">
+			<a href="index.html"   class="links">Home</a>
+			<div class="links" id="linkcont1" onmouseover="expand1();" onmouseout="deExpand1()" >
+				<a class="dlinks" id="expand1">Services</a>
+				<a href="index.html#btf" class="dlinks" >Back to the future</a>
+				<a href=" index.html#tl" class="dlinks">Tere Liye</a>
+				<a href="index.html#wrgrt" class="dlinks">We are gRoot</a>
+			</div>
+			<a href="blogPage.html"   class="links">Blog</a>
+			<div class="links" id="linkcont" onmouseover="expand();" onmouseout="deExpand()" >
+				<a class="dlinks" id="expand2" onmouseover="expand()"  >About Us</a>
+				<a href="index.html#ourmission" style="width: 100px !important;" class="dlinks" >Our Mission</a>
+				<a href=" index.html#teamcontmain" style="width: 100px !important;" class="dlinks">Our Team</a>
+			</div>
+			<a class="links" href="index.html#contactus"   >Contact Us</a>
+			<div class="hamburger" onclick="showrespmenu()"></div>
+		</div>
+	</div>
+	<div class="resp-menu" style="width:100%;margin-top:80px;position:fixed">
+		<a class="resp-link" href="index.html">Home</a>
+			<a class="resp-link" onclick="drop1()">Services</a>
+			<a class="resp-link drop1"  href="index.html#btf">Back to the future</a>
+			<a class="resp-link drop1"  href=" index.html#tl">Tere Liye</a>
+			<a class="resp-link drop1"  href="index.html#wrgrt">We are gRoot</a>
+			<a class="resp-link" href="blogPage.html">Blog</a>
+			<a class="resp-link" onclick="drop2()">Know us</a>
+			<a class="resp-link drop2"  href="index.html#aboutusrecog" >About Us</a>
+			<a class="resp-link drop2"  href="index.html#ourmissionrecog">Our Mission</a>
+			<a class="resp-link drop2"  href=" index.html#teamcontmain">Our Team</a>
+			<a class="resp-link"   href="index.html#contactus">Contact Us</a>
+	</div>
+
+
+
+	<div>
+
+	</div>
+
+	   <div style="height:66vw; ">
+			<div class="homeMain" id="homeMain">
+				<div id="particles-js" class="stall"  ></div>
+				<div id="bg1" class="stall"  ></div>
+				<div  class="stall"  id="wordsheet" data-0="background-position:-6vw 0px;" data-end="background-position:-6vw -800px;"></div>
+
+			<div style="width:100%;height:66vw;display:flex;justify-content:center;align-items:center">
+				<svg id="svg" style="margin-top:8vw;margin-left:6vw" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 680 680" height="34vw" width="34vw">
+					<defs>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M55.89 140.79C55.34 137.36 54.98 133.91 54.84 130.44C54.58 123.93 55.44 119.55 55.51 118.34C56.05 114.9 57.22 111.58 58.98 108.55C60.38 106.2 62.13 104.08 64.19 102.26C66.33 100.39 68.74 98.85 71.35 97.68C77.08 95.04 83.71 94.15 85.09 93.76C87.63 93.34 90.19 93.08 92.77 92.97C100.68 92.66 104.89 94.65 106.23 94.84C114.31 98 117.46 104.51 118.71 105.58C120.33 108.41 121.64 111.4 122.62 114.51C123.99 118.76 124.57 122.76 124.78 123.68C124.79 123.73 124.8 123.78 124.81 123.83C124.92 124.52 125.47 127.98 126.46 134.2L104.37 137.73C103.35 131.32 102.79 127.77 102.67 127.06C101.85 121.87 100.83 118.63 100.62 117.69C99.45 113.67 97.18 112.16 96.8 111.55C96.73 111.49 96.66 111.44 96.59 111.38C95.8 110.8 94.89 110.39 93.92 110.19C91.47 109.62 88.47 110.2 87.87 110.2C86.84 110.36 85.82 110.59 84.83 110.9C83.26 111.4 82.34 111.99 82.07 112.11C81.13 112.66 80.31 113.38 79.66 114.24C78.66 115.61 77.97 117.18 77.64 118.83C77.42 119.86 77.31 120.91 77.3 121.97C77.24 126.55 78.04 131.12 78.12 132.14C78.13 132.17 78.13 132.2 78.14 132.23C78.99 137.59 85.83 180.52 86.69 185.88C86.91 187.33 87.19 188.76 87.51 190.19C87.98 192.29 88.44 193.67 88.54 194.05C88.83 194.97 89.16 195.87 89.54 196.76C89.95 197.74 90.46 198.67 91.08 199.55C92.39 201.39 93.86 202.17 94.17 202.46C94.29 202.54 94.42 202.61 94.55 202.68C97.78 204.43 101.93 203.54 102.75 203.63C103.72 203.48 104.68 203.26 105.62 202.97C107.06 202.51 107.9 201.96 108.16 201.85C109.09 201.31 109.89 200.56 110.49 199.66C111.28 198.44 111.82 197.08 112.09 195.67C112.41 194.12 112.37 192.66 112.4 192.33C112.4 192.25 112.4 192.17 112.4 192.09C112.34 189.07 112.02 185.74 111.44 182.08L109.67 170.95L131.75 167.42C132.7 173.37 133.23 176.67 133.33 177.33C133.86 180.59 134.17 183.87 134.24 187.17C134.31 190.54 134.06 193.91 133.47 197.24C131.87 206.17 126.07 210.66 125.24 212.15C123.3 213.87 121.11 215.29 118.75 216.38C113.19 219 106.59 219.88 105.24 220.27C102.42 220.74 99.57 221 96.71 221.05C92.25 221.1 89.3 220.38 88.47 220.31C86.48 219.9 84.54 219.26 82.7 218.41C73.99 214.33 70.74 206.88 69.41 205.6C64.9 197.01 63.62 187.23 62.97 185.19C62.95 185.07 62.93 184.95 62.91 184.84C62.91 184.84 56.6 145.19 55.89 140.79Z" id="d14N2eXKC7"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M177.95 143C177.81 142.11 177.64 141.22 177.44 140.33C176.98 138.25 176.49 137.05 176.38 136.69C176.17 136.13 175.91 135.58 175.6 135.07C175.06 134.18 174.5 133.71 174.38 133.56C174.18 133.37 173.96 133.2 173.73 133.05C172.03 131.91 169.4 132.47 168.92 132.41C168.32 132.5 167.72 132.65 167.14 132.86C166.08 133.26 165.48 133.79 165.29 133.9C165.13 134.03 164.98 134.17 164.84 134.31C164.12 135.06 163.6 135.96 163.31 136.94C163.2 137.33 163.11 137.72 163.05 138.12C162.82 139.66 162.81 141.41 163.01 143.36L163.55 148.74C151.44 150.21 144.71 151.02 143.36 151.19C142.99 148.38 142.83 145.54 142.91 142.7C143.05 138.26 143.98 135.4 144.1 134.59C144.79 132.05 145.94 129.64 147.48 127.47C149.6 124.62 152.37 122.29 155.57 120.67C160.83 117.92 167.06 117.11 168.34 116.72C170.78 116.31 173.26 116.13 175.73 116.18C184.01 116.41 187.83 120.42 189.18 120.89C195.75 126.58 197.14 135.63 198.02 137.26C198.2 138.08 198.35 138.9 198.48 139.72C199.13 143.79 204.31 176.35 204.96 180.42C205.74 185.3 206.44 188.34 206.6 189.22C207.47 193.15 208.19 195.58 208.37 196.29C208.62 197.15 208.87 198.02 209.12 198.89C209.42 199.94 209.7 200.92 209.97 201.81C198.58 203.63 192.26 204.64 190.99 204.85C190.7 203.93 190.39 203.01 190.09 202.09C189.46 200.22 188.86 198.5 188.72 198.1C187.45 194.47 187.03 193.22 186.84 192.68C186.83 192.63 186.81 192.59 186.8 192.54C186.09 198.13 182.87 202.1 182.43 203.17C180.68 205.56 178.22 207.37 175.4 208.35C174.07 208.83 172.7 209.19 171.3 209.4C169.45 209.71 167.58 209.76 165.72 209.54C163.86 209.32 162.05 208.78 160.38 207.94C155.53 205.51 153.22 201.77 152.43 201.08C149.33 196.66 148.9 192.44 148.51 191.47C147.19 183.24 149.32 178.54 149.41 177.11C151.62 170.97 155.47 167.42 156.14 166.34C158.45 164 160.95 161.86 163.63 159.95C164.65 159.22 165.69 158.52 166.75 157.84C170.81 155.27 174.94 152.86 179.16 150.62C178.43 146.05 178.03 143.51 177.95 143ZM180.81 160.99C177.71 163.52 175.57 165.48 174.99 165.98C173.79 167.07 172.67 168.24 171.65 169.5C171.21 170.04 170.79 170.6 170.39 171.17C169.53 172.41 168.83 173.75 168.3 175.15C168.1 175.7 167.93 176.26 167.78 176.83C167.51 177.95 167.38 179.1 167.38 180.25C167.38 181.31 167.47 182.37 167.64 183.41C167.79 184.41 168.02 185.4 168.32 186.36C168.81 187.9 169.41 188.83 169.53 189.1C169.89 189.71 170.32 190.28 170.81 190.8C171.4 191.44 172.12 191.96 172.92 192.34C174.46 193.03 175.97 192.76 176.31 192.81C176.41 192.79 176.52 192.78 176.62 192.76C178.65 192.44 179.91 191.32 180.28 191.16C181.91 189.89 182.81 188.58 183.09 188.29C183.32 187.98 183.54 187.66 183.76 187.34C184.08 186.84 184.27 186.48 184.32 186.39C184.47 186.11 184.61 185.82 184.72 185.53C183.94 180.62 181.2 163.44 180.81 160.99Z" id="b1lCuI4fUS"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M224.43 199.5L210.39 111.4L231.55 108.02C232.84 116.16 233.56 120.68 233.71 121.59C234.37 119.92 235.11 118.29 235.92 116.69C237.15 114.26 238.21 112.77 238.46 112.34C239.29 111.11 240.22 109.96 241.26 108.89C245.38 104.72 250 104.33 250.97 103.82C251.2 103.78 251.42 103.75 251.64 103.72C252.18 103.66 252.52 103.64 252.62 103.64C253.11 103.61 253.61 103.61 253.72 103.61C253.91 103.6 254.1 103.6 254.29 103.6C254.63 105.75 257.37 122.95 257.71 125.09C255.73 124.63 253.82 124.52 253.39 124.46C251.05 124.29 249.18 124.64 248.71 124.66C246.7 124.96 244.77 125.66 243.03 126.71C242.46 127.06 241.92 127.44 241.41 127.86C240.48 128.62 239.64 129.49 238.92 130.44C237.84 131.83 236.84 133.5 235.92 135.46L245.58 196.12L224.43 199.5Z" id="bQgVsTAGn"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M290.53 188.94L258.61 103.69L279.3 100.39L298.55 162.18L297.5 97.48L317.87 94.22L314.02 185.18L290.53 188.94Z" id="a7Z5AH7R2"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M342.33 180.66L328.29 92.56L349.45 89.18L363.48 177.28L342.33 180.66ZM326.06 78.53L323.31 61.31L344.47 57.93L347.21 75.15L326.06 78.53Z" id="a5G9L1cevG"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M380.28 174.59L366.24 86.49L387.4 83.11C388.24 88.41 388.71 91.36 388.81 91.95C390.6 89.59 392.62 87.39 394.82 85.39C395.78 84.53 396.78 83.7 397.82 82.93C402.73 79.25 407.84 78.72 408.95 78.26C410.15 78.06 411.37 77.97 412.58 78C414.76 78.07 416.17 78.65 416.57 78.72C417.15 78.94 417.71 79.2 418.24 79.51C420.19 80.65 421.86 82.21 423.12 84.07C423.51 84.63 423.87 85.22 424.2 85.82C425.7 88.6 426.73 91.72 427.28 95.18L438.45 165.29L417.3 168.67C410.99 129.07 407.48 107.07 406.78 102.67C406.67 101.92 406.51 101.18 406.31 100.45C405.67 98.13 404.75 97.15 404.58 96.79C404.57 96.78 404.57 96.78 404.57 96.78C403.94 96.02 403.06 95.53 402.08 95.38C400.92 95.17 399.67 95.41 399.41 95.41C398.66 95.54 397.94 95.75 397.25 96.05C396.08 96.55 395.1 97.26 394.86 97.39C393.56 98.29 392.33 99.28 391.19 100.37C390.88 100.66 390.58 100.95 390.29 101.25C391.03 105.91 394.75 129.23 401.43 171.21L380.28 174.59Z" id="cAApTqFdI"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M501.16 61.33C505.3 67.51 507.6 70.95 508.06 71.64C507.69 71.81 507.31 71.99 506.94 72.17C505.77 72.75 504.5 73.46 504.23 73.61C504.06 73.7 503.89 73.8 503.72 73.89C501.01 75.42 498.94 76.77 498.41 77.09C495.99 78.63 494.98 79.48 494.6 79.75C494.53 79.8 494.46 79.86 494.39 79.92C494.94 80.74 495.44 81.6 495.89 82.48C496.55 83.77 497.06 85 497.19 85.28C497.45 85.9 497.7 86.53 497.94 87.17C499.6 91.59 500.02 94.85 500.26 95.71C500.68 98.27 500.9 100.86 500.91 103.47C500.92 108.21 499.98 111.45 499.88 112.33C499.11 115.47 497.69 118.43 495.71 121.01C494.75 122.24 493.66 123.37 492.46 124.38C490.59 125.95 488.48 127.22 486.21 128.16C483.36 129.37 480.54 129.94 479.91 130.14C478.98 130.34 478.05 130.52 477.12 130.66C473.85 131.19 471.3 131.1 470.65 131.15C469.39 131.14 468.13 131.08 466.87 130.99C466.15 130.94 465.42 130.86 464.69 130.77C464.21 131.81 463.77 132.87 463.37 133.94C463.37 133.95 463.37 133.95 463.37 133.96C462.75 135.62 463.05 136.96 463.02 137.29C463.14 138.08 463.6 138.77 464.27 139.2C464.72 139.51 465.22 139.69 465.32 139.74C465.76 139.9 466.2 140.02 466.66 140.09C468.11 140.35 469.89 140.3 470.25 140.32C470.76 140.32 471.28 140.3 471.79 140.27C473.71 140.15 489.13 139.19 491.06 139.07C493.23 138.92 495.41 138.95 497.57 139.17C501.18 139.56 503.43 140.57 504.08 140.73C505.66 141.35 507.14 142.2 508.47 143.24C514.48 147.96 515.36 155.87 516.12 157.27C516.16 157.47 516.19 157.67 516.22 157.86C516.56 159.88 516.67 161.93 516.58 163.97C516.46 166.64 515.81 169.27 514.68 171.71C513.51 174.12 511.85 176.28 509.8 178.03C507.72 179.86 505.46 181.06 504.98 181.4C504.86 181.47 504.73 181.53 504.61 181.6C499.34 184.49 492.73 185.84 491.41 186.32C489.31 186.8 487.19 187.2 485.06 187.54C482.52 187.95 479.96 188.24 477.39 188.41C473.36 188.66 470.52 188.4 469.76 188.4C469.37 188.37 468.98 188.33 468.59 188.3C466.88 188.14 465.18 187.84 463.52 187.42C460.72 186.68 458.98 185.64 458.48 185.44C457.9 185.12 457.34 184.78 456.81 184.4C452.31 181.21 451.89 176.04 451.34 175.11C451.09 173.6 451.05 172.06 451.23 170.54C451.35 169.48 451.6 168.44 451.95 167.43C451.96 167.41 451.97 167.4 451.97 167.38C452.84 164.99 454.19 162.8 455.94 160.93C458.66 158 461.37 156.27 461.97 155.75C456.62 155.2 454.27 152.9 453.41 152.58C451.32 150.89 449.94 148.48 449.55 145.84C449.54 145.79 449.53 145.75 449.53 145.7C449.28 144.23 449.23 142.72 449.37 141.23C449.53 139.57 450.01 137.94 450.76 136.44C451.36 135.26 452.03 134.11 452.76 133C454.45 130.38 456.43 128.05 456.83 127.5C451.41 124.46 448.96 119.96 448.08 119.13C447.2 117.68 446.45 116.16 445.85 114.57C444.93 112.18 444.39 109.82 444.23 109.29C443.85 107.71 443.53 106.11 443.28 104.5C442.87 101.99 442.65 99.44 442.61 96.89C442.58 92.82 443.26 90.04 443.33 89.28C443.49 88.5 443.69 87.73 443.92 86.97C446.16 79.5 451.24 76.16 452.05 74.96C454.25 73.3 456.69 71.96 459.29 71C462.45 69.8 465.51 69.31 466.2 69.12C466.56 69.05 466.92 68.99 467.28 68.93C468.96 68.66 470.66 68.49 472.36 68.42C476.37 68.27 478.86 69.01 479.59 69.08C484.73 70.36 487.61 73.49 488.5 73.98C488.72 73.53 488.96 73.1 489.22 72.67C490.06 71.3 491.24 69.85 491.46 69.54C491.68 69.26 491.9 68.99 492.13 68.71C493.85 66.65 495.85 64.83 498.09 63.31C498.24 63.2 498.4 63.1 498.55 63C498.55 63 499.42 62.44 501.16 61.33ZM476.78 117C477.71 116.72 478.27 116.38 478.44 116.31C478.76 116.13 479.07 115.92 479.36 115.69C480.91 114.43 481.28 112.43 481.49 112.07C481.66 111.38 481.77 110.68 481.83 109.98C481.98 108.33 481.85 106.67 481.85 106.31C481.78 105.25 481.68 104.19 481.56 103.13C481.38 101.51 481.15 100.05 481.11 99.71C481.05 99.3 480.99 98.89 480.92 98.48C480.73 97.26 480.51 96.04 480.28 94.83C479.95 93.17 479.67 92.02 479.61 91.71C479.53 91.39 479.45 91.08 479.37 90.76C479.17 89.98 478.94 89.21 478.69 88.44C478.07 86.65 477.44 85.62 477.31 85.31C477.01 84.78 476.66 84.29 476.25 83.83C475.69 83.2 474.99 82.7 474.21 82.36C472.75 81.75 471.01 81.94 470.65 81.89C470.22 81.92 469.79 81.97 469.37 82.04C467.12 82.4 466.01 83.22 465.63 83.35C465.39 83.5 465.17 83.66 464.95 83.84C464.13 84.53 463.52 85.42 463.16 86.41C463.02 86.78 462.91 87.16 462.83 87.54C462.33 89.89 462.51 92.73 462.47 93.3C462.58 95.92 462.98 98.62 463.04 99.21C463.13 99.91 463.23 100.6 463.34 101.29C463.53 102.47 463.74 103.65 463.97 104.83C464.28 106.44 464.56 107.56 464.63 107.86C464.7 108.17 464.78 108.48 464.86 108.79C465.51 111.32 466.29 112.7 466.45 113.14C466.61 113.46 466.79 113.77 466.98 114.08C468.26 116.14 469.91 116.7 470.23 116.99C471.55 117.57 473.14 117.7 475 117.4C475.8 117.25 476.39 117.12 476.78 117ZM471.31 156.29C470.65 157.01 470.03 157.77 469.45 158.56C469.2 158.9 468.96 159.24 468.73 159.59C467.64 161.25 467.28 162.71 467.12 163.05C466.61 164.85 466.93 166.32 466.91 166.68C467.42 169.94 470.1 170.9 470.45 171.37C470.81 171.54 471.17 171.68 471.55 171.8C474.65 172.81 479.95 172.12 480.88 172.16C482.23 172.02 483.58 171.84 484.92 171.62C486.44 171.38 487.95 171.09 489.45 170.76C493.63 169.82 495.65 168.78 496.34 168.57C496.81 168.35 497.27 168.11 497.72 167.85C498.47 167.43 499.16 166.88 499.74 166.24C501.38 164.4 501.04 162.22 501.18 161.77C501.17 161.53 501.14 161.3 501.1 161.06C500.71 158.62 499.55 157.65 499.38 157.27C499 156.9 498.57 156.58 498.09 156.34C497.46 156.01 496.79 155.81 496.65 155.76C496.14 155.6 495.62 155.47 495.09 155.38C492.42 154.89 488.63 155.16 487.91 155.14C487.58 155.16 487.26 155.18 486.93 155.2C486.93 155.2 472.87 156.18 471.31 156.29Z" id="bLnI3ZKgB"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M188.51 387.49C187.08 378.53 186.29 373.55 186.13 372.56C187.2 372.39 188.26 372.2 189.33 371.98C192.61 371.32 194.34 370.68 194.9 370.53C196.97 369.81 197.93 369.02 198.26 368.85C198.75 368.5 199.18 368.07 199.54 367.6C200.85 365.83 200.32 363.54 200.41 363.08C200.1 361.1 198.61 357.6 198.4 357C197.28 354.26 196.03 351.28 194.67 348.06L163.04 276.68L183.57 273.4L204.49 329.61L205.35 269.92L225.72 266.66C221.88 323.64 219.75 355.29 219.32 361.62C219.22 363.51 218.96 365.39 218.56 367.24C217.9 370.22 216.89 372.11 216.7 372.65C216.35 373.37 215.95 374.07 215.51 374.74C212.17 379.8 207.31 381.89 206.4 382.68C202.56 384.6 197.95 385.99 192.55 386.85L188.51 387.49Z" id="f1UOuDOaCu"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M238.47 294.63C238.06 292.14 237.84 289.63 237.81 287.1C237.77 281.89 238.89 278.47 239.01 277.51C241.11 270.14 246.13 266.74 246.92 265.54C248.91 263.99 251.12 262.73 253.48 261.8C256.47 260.59 259.4 260.02 260.06 259.83C260.88 259.66 261.7 259.5 262.52 259.37C264.82 258.99 267.15 258.8 269.48 258.78C273.41 258.77 276.05 259.5 276.78 259.59C277.65 259.8 278.51 260.05 279.35 260.36C286.37 262.91 289.52 268.37 290.65 269.26C292.13 271.49 293.33 273.88 294.23 276.4C295.21 279.1 295.97 282.08 296.49 285.36C299.31 303.1 300.89 312.96 301.2 314.93C301.61 317.42 301.83 319.94 301.86 322.46C301.9 327.68 300.78 331.1 300.66 332.05C298.56 339.42 293.48 342.84 292.68 344.04C286.79 348.65 278.56 349.6 276.99 350.22C274.7 350.6 272.37 350.79 270.05 350.81C264.59 350.82 261.23 349.38 260.25 349.22C253.3 346.66 250.14 341.2 249.02 340.31C247.54 338.08 246.34 335.68 245.44 333.17C244.46 330.47 243.71 327.48 243.18 324.2C240.36 306.46 238.79 296.61 238.47 294.63ZM275.27 287.35C274.62 283.23 273.78 280.69 273.61 279.95C273.37 279.15 273.06 278.37 272.68 277.62C271.98 276.28 271.19 275.55 271.03 275.32C270.88 275.17 270.73 275.03 270.58 274.89C268.7 273.24 266.01 273.73 265.51 273.6C265.32 273.62 265.14 273.65 264.96 273.68C264.28 273.78 263.62 273.95 262.98 274.19C261.8 274.64 261.18 275.26 260.98 275.38C260.59 275.73 260.26 276.13 260 276.58C259.49 277.45 259.13 278.39 258.92 279.37C258.65 280.56 258.64 281.68 258.61 281.94C258.61 282.08 258.61 282.21 258.61 282.35C258.6 283.64 258.66 284.92 258.78 286.2C258.9 287.44 259.05 288.68 259.25 289.91C259.77 293.14 263.88 318.99 264.4 322.22C264.63 323.65 264.91 325.08 265.25 326.49C265.51 327.56 265.81 328.63 266.15 329.68C267.24 333.02 268.95 334.22 269.26 334.73C270.06 335.39 271.04 335.81 272.08 335.94C273.02 336.07 273.91 335.96 274.12 335.96C274.37 335.94 274.62 335.9 274.87 335.86C277.36 335.47 278.4 334.42 278.79 334.25C279.2 333.91 279.56 333.5 279.84 333.04C281.24 330.78 281.02 327.85 281.16 327.28C281.1 324.94 280.86 322.4 280.42 319.66C277.33 300.27 275.61 289.5 275.27 287.35Z" id="c14RqtEyP"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M305.51 253.91L326.67 250.53C333 290.31 336.53 312.41 337.23 316.83C337.64 319.41 338.37 320.73 338.49 321.16C338.77 321.74 339.12 322.29 339.54 322.79C340.23 323.61 341.21 324.14 342.28 324.27C343.1 324.4 343.89 324.31 344.07 324.31C344.31 324.29 344.55 324.26 344.79 324.22C345.84 324.05 346.86 323.7 347.8 323.2C348.34 322.92 348.85 322.6 349.34 322.24C350.71 321.24 352.01 320.15 353.23 318.97C353.36 318.84 353.49 318.72 353.62 318.59C352.87 313.88 349.12 290.36 342.38 248.02L363.53 244.63L377.57 332.74L356.41 336.12C355.61 331.09 355.17 328.29 355.08 327.73C351.25 332.72 347.12 335.48 346.24 336.34C341.23 339.95 336.13 340.48 335.01 340.94C333.69 341.16 332.36 341.23 331.03 341.15C329.22 341.04 327.46 340.53 325.88 339.67C323.76 338.49 321.97 336.83 320.66 334.82C320.34 334.33 320.03 333.82 319.76 333.3C318.27 330.5 317.26 327.49 316.74 324.38C316.72 324.26 316.7 324.14 316.68 324.02C316.68 324.02 312.96 300.65 305.51 253.91Z" id="g1prTex20y"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M394.36 330.05L380.33 241.95L401.48 238.57C402.78 246.71 403.5 251.23 403.64 252.13C404.31 250.47 405.04 248.84 405.85 247.23C407.08 244.81 408.14 243.32 408.4 242.89C409.22 241.66 410.15 240.5 411.19 239.44C415.31 235.26 419.94 234.88 420.91 234.37C421.13 234.33 421.35 234.3 421.58 234.27C422.11 234.21 422.46 234.19 422.55 234.18C423.04 234.16 423.54 234.16 423.65 234.15C423.84 234.15 424.03 234.15 424.22 234.15C424.56 236.3 427.3 253.49 427.65 255.64C425.66 255.18 423.75 255.07 423.32 255.01C420.98 254.83 419.11 255.19 418.65 255.21C416.63 255.51 414.7 256.21 412.96 257.26C412.4 257.61 411.85 257.99 411.34 258.41C410.41 259.17 409.58 260.04 408.85 260.99C407.77 262.38 406.77 264.05 405.85 266L415.52 326.67L394.36 330.05Z" id="g4qwZ3jgch"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M43.16 597.4L24.5 480.34L45.66 476.96C46.3 480.98 46.66 483.22 46.73 483.67C50.03 479.39 53.58 477.15 54.35 476.43C58.66 473.48 62.85 473.03 63.79 472.65C65.24 472.41 66.71 472.32 68.18 472.37C70.99 472.48 72.82 473.32 73.33 473.43C73.62 473.54 73.91 473.67 74.18 473.81C77 475.2 79.41 477.25 81.2 479.79C81.27 479.88 81.34 479.98 81.4 480.08C84.3 484.23 85.51 488.28 85.97 489.2C87.08 492.51 87.89 495.74 88.39 498.89C91.24 516.82 92.83 526.77 93.15 528.77C94.53 537.45 93.53 543.33 93.57 544.95C93.32 547.02 92.85 549.06 92.17 551.04C91.38 553.34 90.21 555.51 88.71 557.45C86.87 559.78 84.4 561.55 81.58 562.54C80.15 563.06 78.68 563.44 77.18 563.67C72.36 564.44 68.66 562.92 67.71 562.84C65.13 561.94 62.65 560.78 60.3 559.39C59.74 559.06 59.18 558.71 58.63 558.35C59.01 560.73 60.9 572.62 64.31 594.02L43.16 597.4ZM67.09 501.36C66.43 497.24 65.47 494.79 65.29 494.06C65.01 493.27 64.66 492.5 64.24 491.77C63.51 490.5 62.73 489.8 62.57 489.58C62.42 489.44 62.27 489.31 62.12 489.18C61.18 488.39 59.99 487.93 58.75 487.88C58.1 487.85 57.46 487.89 56.83 487.99C55.31 488.24 53.86 488.8 52.57 489.62C52.41 489.72 52.26 489.82 52.11 489.92C51.12 490.59 50.19 491.34 49.33 492.16C48.96 492.52 48.6 492.89 48.26 493.27C49.14 498.83 56.23 543.34 57.12 548.9C59.36 549.95 61.36 550.27 61.83 550.42C63.4 550.71 65.02 550.74 66.61 550.51C66.72 550.49 66.83 550.48 66.94 550.46C67.6 550.36 68.25 550.18 68.87 549.93C70.07 549.46 71.06 548.57 71.64 547.44C72.03 546.67 72.32 545.86 72.51 545.02C72.9 543.3 72.84 541.54 72.87 541.15C72.84 538.6 72.59 535.86 72.12 532.91C69.1 513.98 67.43 503.46 67.09 501.36Z" id="baHF8yztR"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M136.86 488.8C136.72 487.9 136.55 487.01 136.36 486.12C135.9 484.05 135.41 482.85 135.3 482.48C135.09 481.92 134.83 481.38 134.52 480.86C133.98 479.97 133.42 479.5 133.3 479.35C133.09 479.17 132.88 479 132.65 478.84C130.95 477.71 128.32 478.27 127.84 478.2C127.23 478.3 126.64 478.45 126.06 478.66C124.99 479.05 124.39 479.59 124.21 479.69C124.05 479.82 123.9 479.96 123.76 480.11C123.04 480.85 122.52 481.75 122.23 482.74C122.12 483.12 122.03 483.51 121.97 483.91C121.74 485.46 121.72 487.21 121.93 489.15L122.47 494.54C110.35 496 103.63 496.82 102.28 496.98C101.9 494.17 101.75 491.34 101.83 488.5C101.97 484.05 102.89 481.2 103.01 480.39C103.71 477.84 104.86 475.43 106.4 473.27C108.51 470.41 111.29 468.08 114.49 466.47C119.75 463.71 125.98 462.91 127.25 462.51C129.7 462.1 132.17 461.92 134.65 461.97C142.93 462.21 146.75 466.21 148.09 466.68C154.67 472.38 156.05 481.42 156.94 483.06C157.11 483.87 157.26 484.69 157.39 485.52C158.04 489.59 163.23 522.14 163.88 526.21C164.66 531.09 165.36 534.14 165.52 535.02C166.39 538.94 167.11 541.37 167.28 542.08C167.53 542.95 167.78 543.82 168.03 544.68C168.34 545.74 168.62 546.71 168.88 547.61C157.5 549.43 151.17 550.44 149.91 550.64C149.61 549.72 149.31 548.8 149 547.89C148.38 546.02 147.77 544.29 147.64 543.89C146.37 540.26 145.95 539.02 145.76 538.47C145.75 538.43 145.73 538.38 145.71 538.34C145.01 543.92 141.78 547.9 141.35 548.96C139.59 551.35 137.14 553.16 134.32 554.15C132.99 554.63 131.61 554.98 130.22 555.2C128.37 555.5 126.49 555.55 124.64 555.34C122.77 555.11 120.97 554.57 119.3 553.74C114.45 551.31 112.14 547.56 111.35 546.88C108.25 542.45 107.82 538.23 107.42 537.27C106.11 529.04 108.23 524.34 108.32 522.9C110.54 516.76 114.39 513.21 115.06 512.13C117.36 509.79 119.87 507.66 122.55 505.75C123.57 505.01 124.61 504.31 125.67 503.64C129.73 501.06 133.86 498.66 138.08 496.42C137.35 491.85 136.94 489.31 136.86 488.8ZM139.73 506.78C136.62 509.31 134.49 511.28 133.91 511.78C132.7 512.86 131.59 514.04 130.57 515.29C130.13 515.83 129.71 516.39 129.31 516.97C128.45 518.2 127.75 519.54 127.22 520.94C127.02 521.49 126.84 522.05 126.7 522.62C126.43 523.74 126.29 524.89 126.3 526.04C126.3 527.1 126.38 528.16 126.55 529.21C126.71 530.21 126.94 531.19 127.24 532.16C127.73 533.69 128.33 534.62 128.45 534.9C128.81 535.51 129.24 536.08 129.73 536.6C130.32 537.24 131.04 537.76 131.84 538.13C133.38 538.82 134.89 538.55 135.23 538.6C135.33 538.59 135.44 538.57 135.54 538.56C137.56 538.23 138.83 537.12 139.19 536.96C140.82 535.68 141.72 534.37 142.01 534.09C142.24 533.77 142.46 533.45 142.67 533.13C143 532.63 143.18 532.28 143.24 532.18C143.39 531.9 143.52 531.62 143.64 531.32C142.86 526.42 140.12 509.24 139.73 506.78Z" id="g1AnMORpHJ"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M184.28 545.15L164.61 421.68L185.61 418.33L205.28 541.79L184.28 545.15Z" id="b5tiQ3EEdP"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M222.08 539.11L208.04 451.01L228.42 447.75C229.14 452.32 229.55 454.86 229.63 455.37C230.91 453.5 232.39 451.76 234.03 450.18C235.42 448.85 236.96 447.67 238.61 446.67C243.7 443.59 248.23 443.09 249.3 442.69C254.59 441.85 258 443.69 258.97 443.8C263.35 445.76 265.4 450.37 266.11 451.1C267.27 449.27 268.57 447.54 270.02 445.92C272.67 442.99 275.11 441.54 275.68 441.05C281.03 437.62 285.96 437.09 287.1 436.65C291.92 435.88 295.14 437.54 296.03 437.64C297.92 438.47 299.62 439.67 301.01 441.16C301.76 441.95 302.45 442.81 303.06 443.71C303.95 445.05 304.69 446.49 305.27 447.99C306.09 450.11 306.51 452.18 306.64 452.64C306.82 453.43 306.97 454.23 307.09 455.02C307.82 459.61 311.47 482.52 318.04 523.77L297.82 527C291.43 486.85 287.87 464.55 287.16 460.08C286.36 455.05 284.63 454.09 284.35 453.42C283.37 452.64 282.15 452.2 280.89 452.18C280.33 452.16 279.77 452.2 279.22 452.29C277.08 452.63 275.15 453.88 274.7 454.06C274.43 454.21 274.17 454.37 273.92 454.54C272.02 455.81 270.35 457.39 269.01 459.22C269.01 459.23 269.01 459.23 269 459.24C269.01 459.29 269.06 459.57 269.14 460.07L269.3 461.06L280.25 529.81L260.18 533.01C253.79 492.87 250.23 470.56 249.52 466.1C248.88 462.08 247.63 460.83 247.42 460.24C247.19 459.95 246.92 459.68 246.63 459.45C244.54 457.83 241.95 458.44 241.43 458.33C240.58 458.47 239.75 458.71 238.96 459.05C237.91 459.5 237.03 460.06 236.82 460.17C236.61 460.3 236.4 460.44 236.2 460.57C234.38 461.8 232.71 463.37 231.21 465.28L242.45 535.85L222.08 539.11Z" id="g35Me6MoPj"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M372.95 514.99L353.28 391.53L374.28 388.17L393.95 511.63L372.95 514.99Z" id="crQiM8hi7"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M411.37 508.85L397.33 420.75L418.48 417.37L432.52 505.47L411.37 508.85ZM395.1 406.73L392.35 389.5L413.51 386.12L416.25 403.34L395.1 406.73Z" id="e1xBB57xAO"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M449.32 502.78L435.28 414.68L456.44 411.3C457.28 416.61 457.75 419.55 457.84 420.14C459.64 417.78 461.66 415.58 463.86 413.58C464.82 412.72 465.82 411.9 466.85 411.12C471.77 407.44 476.88 406.92 477.99 406.45C479.19 406.25 480.4 406.16 481.62 406.19C483.8 406.26 485.21 406.84 485.6 406.92C486.19 407.13 486.75 407.39 487.28 407.7C489.23 408.85 490.9 410.4 492.16 412.26C492.55 412.83 492.91 413.41 493.23 414.02C494.74 416.8 495.77 419.92 496.32 423.37L507.49 493.48L486.34 496.87C480.03 457.27 476.52 435.27 475.82 430.87C475.71 430.12 475.55 429.37 475.35 428.64C474.71 426.32 473.79 425.35 473.62 424.98C473.61 424.98 473.61 424.97 473.61 424.97C472.98 424.22 472.1 423.72 471.12 423.57C469.96 423.36 468.71 423.6 468.44 423.61C467.7 423.73 466.98 423.94 466.29 424.24C465.12 424.74 464.13 425.45 463.89 425.58C462.6 426.48 461.37 427.48 460.23 428.56C459.92 428.85 459.62 429.14 459.33 429.44C460.07 434.1 463.78 457.42 470.47 499.4L449.32 502.78Z" id="b1hNlRCfPk"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M512.2 433.96C511.8 431.48 511.55 428.99 511.45 426.48C511.31 422.51 511.76 419.8 511.79 419.05C511.95 417.96 512.15 416.87 512.42 415.8C513.08 412.99 514.28 410.33 515.94 407.94C517.13 406.26 518.56 404.75 520.18 403.46C522.2 401.87 524.44 400.59 526.83 399.64C529.86 398.41 532.84 397.84 533.51 397.64C534.34 397.46 535.17 397.31 536.01 397.18C538.09 396.83 540.2 396.63 542.31 396.56C545.66 396.48 547.88 396.95 548.5 396.99C550.18 397.28 551.81 397.77 553.36 398.47C556.95 400.12 560 402.72 562.17 405.98C562.74 406.82 563.27 407.7 563.75 408.61C564.91 410.83 565.87 413.14 566.64 415.52C567.76 418.91 568.38 422.13 568.57 422.86C568.82 424.09 569.04 425.32 569.24 426.56C569.37 427.4 570.04 431.56 571.23 439.06L535.46 444.78C537.12 455.21 538.04 461 538.23 462.16C538.37 463.08 538.55 463.99 538.77 464.89C539.09 466.25 539.43 467.13 539.5 467.38C539.7 467.94 539.94 468.49 540.2 469.03C540.48 469.6 540.82 470.15 541.2 470.66C542.22 471.96 543.32 472.37 543.55 472.56C544.51 472.98 545.54 473.19 546.59 473.19C547.15 473.19 547.71 473.15 548.26 473.06C550.58 472.69 551.64 471.69 552.01 471.54C552.21 471.39 552.39 471.22 552.56 471.04C553.17 470.39 553.65 469.63 553.95 468.8C554.28 467.93 554.39 467.09 554.44 466.9C554.44 466.88 554.44 466.85 554.44 466.83C554.73 464.82 554.45 462.6 554.45 462.13C554.38 461.55 554.31 460.96 554.21 460.38C554.14 459.89 553.75 457.46 553.05 453.07L572.8 449.91C573.37 453.48 573.69 455.46 573.75 455.85C574.19 458.52 574.38 461.22 574.31 463.92C574.17 468.54 572.96 471.52 572.81 472.37C572.17 474.19 571.28 475.92 570.18 477.52C568.12 480.45 565.34 482.83 562.1 484.44C558.81 486.14 555.37 486.91 554.63 487.18C553.26 487.52 551.88 487.8 550.48 488.02C548.21 488.39 545.92 488.6 543.62 488.62C539.87 488.65 537.36 487.99 536.66 487.92C535.55 487.66 534.46 487.33 533.4 486.92C529.1 485.24 525.43 482.29 522.91 478.48C522.68 478.14 522.46 477.8 522.24 477.45C518.54 471.48 517.38 464.27 516.84 462.81C516.69 462.04 516.55 461.26 516.43 460.48C516.43 460.48 512.62 436.61 512.2 433.96ZM533.83 434.57L549.7 432.03C548.89 427 548.45 424.21 548.36 423.65C548.22 422.75 548.05 421.86 547.86 420.98C547.55 419.6 547.26 418.71 547.19 418.46C546.97 417.75 546.71 417.06 546.41 416.38C545.18 413.69 543.58 413.03 543.26 412.66C542.64 412.34 541.97 412.14 541.28 412.05C540.44 411.94 539.64 412 539.46 412C539.05 412.03 538.64 412.07 538.23 412.14C535.74 412.54 534.68 413.71 534.28 413.89C534.16 414 534.05 414.11 533.94 414.23C533.5 414.73 533.15 415.29 532.91 415.9C532.34 417.27 532.25 418.87 532.18 419.2C532.12 419.97 532.11 420.74 532.13 421.5C532.2 423.96 532.63 426.76 532.69 427.34C532.74 427.72 532.8 428.09 532.86 428.47C532.86 428.47 533.18 430.5 533.83 434.57Z" id="b31SsPiPc"></path>
+					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M599.01 450.25C601.09 454.98 603.05 457.25 603.49 458.02C604.17 458.89 604.92 459.69 605.74 460.43C609.43 463.72 613.49 462.71 614.36 462.96C614.38 462.96 614.41 462.95 614.43 462.95C615.14 462.84 615.83 462.67 616.51 462.44C617.63 462.06 618.27 461.56 618.46 461.47C618.95 461.12 619.39 460.7 619.74 460.22C620.44 459.27 620.85 458.14 620.91 456.97C620.96 456.28 620.92 455.58 620.81 454.9C620.22 451.24 617.83 449.25 617.5 448.63C616.89 448.05 616.24 447.5 615.58 446.99C613.82 445.64 611.5 444.13 608.62 442.46C601.23 438.11 597.12 435.7 596.3 435.21C589.59 431.13 586.21 427.33 585.09 426.45C580.6 421.78 579.91 415.11 579.34 413.85C579 411.82 578.91 409.75 579.06 407.7C579.22 405.41 579.79 403.16 580.73 401.05C583.26 395.41 587.85 392.59 588.64 391.65C591.63 389.59 595 388.1 598.56 387.28C599.42 387.07 600.3 386.9 601.18 386.76C603.78 386.32 606.42 386.22 609.04 386.45C612.87 386.8 616.54 388.12 619.68 390.29C623.54 392.98 626.65 396.57 628.76 400.74C629.55 402.26 630.23 403.85 630.8 405.47C629.5 406.27 619.17 412.67 617.88 413.48C616.52 409.94 614.87 407.7 614.54 407.05C613.85 406.03 613.05 405.09 612.14 404.24C611.46 403.61 610.71 403.04 609.92 402.56C607.27 400.95 604.73 401.56 604.16 401.44C603.39 401.56 602.65 401.78 601.94 402.09C600.86 402.56 599.94 403.31 599.26 404.26C598.33 405.57 597.89 407.16 598.02 408.75C598.04 409.04 598.07 409.32 598.12 409.6C598.53 412.19 600.91 414.08 601.22 414.57C601.93 415.2 602.67 415.79 603.43 416.35C604.53 417.16 605.6 417.85 605.84 418.02C606.77 418.63 607.72 419.22 608.67 419.79C609.93 420.59 620.01 426.98 621.27 427.78C625.34 430.26 628.37 432.7 629.16 433.24C632.99 436.23 635.19 439.52 635.86 440.22C637.14 442.04 638.13 444.05 638.77 446.17C639.14 447.38 639.43 448.61 639.62 449.86C639.95 451.83 640.07 453.84 639.96 455.85C639.84 458.39 639.23 460.89 638.16 463.22C635.49 468.96 630.75 471.65 629.93 472.59C626.97 474.49 623.71 475.89 620.28 476.72C619.21 476.99 618.14 477.21 617.05 477.38C614.23 477.85 611.35 477.99 608.5 477.78C604.59 477.5 600.81 476.35 597.44 474.42C594.23 472.53 591.44 470.04 589.2 467.1C586.76 463.94 585.24 460.61 584.8 459.89C584.61 459.5 584.43 459.1 584.25 458.71C584.25 458.71 597.54 451.1 599.01 450.25Z" id="aAowFUEJd"></path>
+					</defs>
+					<g><g><g><use xlink:href="#d14N2eXKC7" opacity="1" fill="#414141" fill-opacity="1"></use>
+						<g><use xlink:href="#d14N2eXKC7" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g>
+						<g><use xlink:href="#b1lCuI4fUS" opacity="1" fill="#414141" fill-opacity="1"></use>
+							<g><use xlink:href="#b1lCuI4fUS" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g>
+							<g><use xlink:href="#bQgVsTAGn" opacity="1" fill="#414141" fill-opacity="1"></use>
+								<g><use xlink:href="#bQgVsTAGn" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g>
+								<g><use xlink:href="#a7Z5AH7R2" opacity="1" fill="none" fill-opacity="1"></use><g><use xlink:href="#a7Z5AH7R2" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#a5G9L1cevG" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#a5G9L1cevG" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#cAApTqFdI" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#cAApTqFdI" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bLnI3ZKgB" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#bLnI3ZKgB" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#f1UOuDOaCu" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#f1UOuDOaCu" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#c14RqtEyP" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#c14RqtEyP" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g1prTex20y" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g1prTex20y" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g4qwZ3jgch" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g4qwZ3jgch" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#baHF8yztR" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#baHF8yztR" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g1AnMORpHJ" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g1AnMORpHJ" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b5tiQ3EEdP" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b5tiQ3EEdP" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g35Me6MoPj" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g35Me6MoPj" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#crQiM8hi7" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#crQiM8hi7" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#e1xBB57xAO" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#e1xBB57xAO" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b1hNlRCfPk" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b1hNlRCfPk" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b31SsPiPc" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b31SsPiPc" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#aAowFUEJd" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#aAowFUEJd" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g></g></g></svg>
+
+			</div>
+	</div>
+			<!-- NAVBAR HERE -->
+
+		<!-- Dropdown Structure -->
+
+		<!-- For PROGRAMS-->
+
+
+
+
+
+	<script>
+		function colorChange(x) {
+			x.style.color = "#F4D03F";
+		}
+
+		function colorBack(x) {
+			x.style.color = "#737373";
+		}
+	</script>
+
+	
+	</div>
+	<a href="#homeMain" id="gotop"><div id="uparrow" onclick="gotop()"></div></a>
+	<div class="logoCont" id="logocont" style="padding:30px;display:flex; flex-flow:row nowrap;width:100%;margin:0px auto;	justify-content:center;background-color:rgba(211, 211, 211, 0.274)">
+		<div id="vidbarcont"  style="min-height: 100%;height:max-content;width:100%;max-width:950px;padding:20px;display:flex;flex-flow:row;overflow-x:hidden;justify-content:center">
+				<video id="video"  poster="thumb.jpg" onclick="videostart()" width="260px" height="120px" controls>
+					<source src="Introduction.mp4" type="video/mp4">
+				</video>
+			<div class="logoo " id="logoscontainer" style="display:flex;flex-flow:column;height:100%;width:fit-content;margin-left:80px">
+				<div class="logos">
+					<div class="logo" >INTER-PERSONAL</div>
+					<div class="logo" >INTRAPERSONAL</div>
+					<div class="logo" >DAY TO DAY FINANCE</div>
+				</div>
+				<div class="logos">
+					<div class="logo" onclick="showwidth()">CAREER PATH</div>
+					<div class="logo" >TECHNOLOGY UPRISING</div>
+					<div class="logo" >EXISTENTIAL</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<div  style="width:100%;display:flex;align-items:center;flex-flow:column;margin:0px;">
+		<div class="row" style = "padding:30px 0px;margin:0px;border-bottom:1px solid rgb(168, 168, 168);justify-content:center !important;align-content:center !important;display:flex;flex-flow:row wrap;">
+			<div class="col s12 m5" style="max-width:500px;display:flex;justify-content:center !important;flex-flow:column;margin:0px">
+				<img style="padding:0px;width:90px;height:95px" alt="" src="covid.png">
+
+				<h3 class="rentSafe" style="margin-top:10px;height: fit-content;">Learn Safe <br>During <span style="color:#F1C40F;">COVID-19</span></br>
+			</div>
+			<div class="col s12 m5" style="max-width:500px;justify-content:center;margin:0px" style="font-size: 18px !important;">
+				<div class="rentSafePara" style="text-align:left;font-size:18px" >
+					The greatest lesson that COVID-19 can teach humanity is that we are all in this together. Life doesn’t get easier or more forgiving, we get stronger and more resilient
+				When the world is running down, you make the best of what's still around. The secret of crisis management is not good vs. bad, it's preventing the bad from getting worse.
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- <div style="text-align:center;background-color:white;padding:50px;padding-bottom:0px;margin-bottom:0px">
+			<h3 class="rentSafe" style="padding:0px;" >Perform All Tasks Online to</br> <span style="color:#F1C40F">Minimize Direct Contact</span></h3>
+
+		</div> -->
+    </div>
+
+	<!-- <div class="carousel hide-on-small-only"  >
+		<div class="car-cont">
+		<div id="car1" class="carEl" href="#three!"></div>
+		<div id="car2" class="carEl" href="#two!"></div>
+		<div  id="car3" class="carEl" href="#one!"></div>
+		</div>
+	</div> -->
+
+
+
+	<br>
+	<br>
+	<div id="btf">
+
+	</div>
+
+
+	<div  style="width: 100%;background-color:#EAEDED;">
+		<div class="newcont"  style="display: flex;flex-flow:row wrap;justify-content:center !important;max-width: 1100px;">
+			<div style="min-width:50%;">
+				<div style="display: flex; justify-content:flex-end">
+					<div class="grootcont" style="background-color:lightgray;width:fit-content;height:fit-content;overflow:hidden;border-radius:10px;opacity:0;box-shadow: 0px 10px 30px 0px rgb(61, 61, 61);margin: 10px 40px">
+						<div class="grootimg" style="width: 380px;height:220px;background-image: url(left.jpg);background-size:cover;background-position:center;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div  style="min-width:50%;max-width:500px">
+				<div style="margin:  10px 40px;text-align:justify">
+					<h3 style="font-weight: 800;" class="newtxt"></h3>
+				<p class="newpara">It is alright if you are not like “Sharma Ji ka beta”  who happens to know just everything. It is okay to not know what the syllabus is, or what the teacher/professor has taught in the class. We are like your elder siblings who will guide you in every step of your life. We will groom you in every possible way you need us to. Be it education or any other stuff we are here to give you a consultation in every aspect of life. So hop in and have fun because learning should be fun.</p>
+				<div style="display: flex;width:100%;justify-content:flex-end;">
+					<a href="index.html#card-cont"  class="search2">Register</a>
+
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="tl" style="width: 100%;background-color:#EAEDED;">
+		<div class="newcont" style="display: flex;flex-flow:row-reverse wrap;justify-content:center !important;max-width: 1100px;">
+			<div style="min-width:50%;">
+				<div style="display: flex; justify-content:flex-start">
+					<div class="grootcont" style="background-color:lightgray;width:fit-content;height:fit-content;overflow:hidden;border-radius:10px;opacity:0;box-shadow: 0px 10px 30px 0px rgb(61, 61, 61);margin: 10px 40px">
+						<div class="grootimg" style="width: 380px;height:220px;background-image: url(15766.jpg);background-size:cover;background-position:center;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="min-width:50%;max-width:500px">
+				<div style="margin:  10px 40px;text-align:justify">
+					<h3 style="font-weight: 800;opacity:1" class="newtxt"></h3>
+				<p class="newpara">There are things that we can’t change or decide like our birth, death or the guy and girl we fall for. But not everything is drawn on our palm lines. Moving forward into the future you will realise where your passion lies but it might have already been late. So, join us on this journey where we embark into the future and carve our lines ourselves the way we want. The future doesn’t have to be so uncertain and unwelcoming. This is not a coaching or preaching, it is a beautiful journey where you will grow as a person. These sessions are our perspective of a complete education where we make you future-ready.</p>
+				<div style="display: flex;width:100%;justify-content:flex-end">
+					<a href="tlPay.html" style="display:flex"  class="search2">Book an appointment</a>
+
+				</div>
+
+			</div>
+			</div>
+		</div>
+
+	</div>
+	<div id="wrgrt" style="width: 100%;background-color:#EAEDED;height:min-content">
+		<div class="newcont" style="display: flex;flex-flow:row wrap;justify-content:center !important;max-width: 1100px;">
+			<div style="min-width:50%;">
+				<div style="display: flex; justify-content:flex-end">
+					<div class="grootcont" style="background-color:lightgray;width:fit-content;height:fit-content;overflow:hidden;border-radius:10px;opacity:0;box-shadow: 0px 10px 30px 0px rgb(61, 61, 61);margin: 10px 40px">
+						<div class="grootimg" style="width: 380px;height:220px;background-image: url(21146.jpg);background-size:cover;background-position:center;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div  style="min-width:50%;max-width:500px">
+				<div style="display: flex;flex-flow:column;margin:  10px 40px;text-align:justify">
+					<h3 style="font-weight: 800;" class="newtxt"></h3>
+				<p class="newpara">The concept of fighting until the end is not something new to us movie freaks. The world might get darker and darker but we need to hold our grounds and be hopeful till the end. Taking inspiration from such fightbacks we aim at being the roots to your cause, the support to your will and the godfather to your ambitions. Let us come together and form a cult of our own where we shall grow together and be part of a larger family and brighter future. We welcome you with open arms to our family where we shall share our ups and lows of life together and march forward into the life that we had dreamt of.</p>
+				<div style="display: flex;width:100%;justify-content:flex-end">
+					<a href="wrgrootPay.html"  class="search2">Join our family</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="background-color:white;display:flex" class="card-cont"  id="card-cont" >
+		<h2 style="color: rgb(34, 34, 34);">Featured courses</h2>
+		<div style="width: fit-content;display:flex;flex-flow:row wrap;justify-content:center;max-width:1200px">
+		<a onclick="modalopen()" class="hcard"  style="background-image: url(card1.jpg);cursor: pointer;padding: 0px;">
+			<div class="hcont" style="flex-flow: column;">
+					<h4>Technology</h4>
+					<h6>&#8377; 250</h6>
+			</div>
+		</a>
+		<a onclick="modalopen1()"  class="hcard " style="background-image: url(card2.jpg);padding: 0px;">
+			<div class="hcont" style="flex-flow: column;">
+					<h4>Family</h4>
+					<h6>&#8377; 200</h6>
+			</div>
+		</a>
+		<a onclick="modalopen2()" class="hcard" style="background-image: url(card3.jpg);padding: 0px;">
+			<div class="hcont" style="flex-flow: column;">
+					<h4>Finance</h4>
+					<h6>&#8377; 250</h6>
+			</div>
+		</a>
+
+
+		</div>
+	</div>
+
+	<div class="moodal" id="moodal1" style="border-radius: 10px;" >
+		<div class="modalimg" style="background-image: url(card1.jpg);"></div>
+		<div class="modalcontent">
+			<div class="modaltext">
+				<div class="exitbtn" onclick="modalclose()">&#10006;</div>
+				<h4>Application of technology</h4>
+				<p>Technology is all around us, from smartphones and computers to self driven cars and industrial robots. Starting its journey from the Industrial revolution in 1760s, technology has advanced in leaps and bounds and everything is available to us at our doorstep. We certainly owe a lot to our ancestors for leaving us such a legacy.
+					<br><br>
+					Technology is the most fascinating and captivating term we have ever come across, yet understanding its applications in the real world can engross our minds forever. As enthralling as the words "Machine Learning, Artificial Intelligence, Blockchain" sound, truly recognizing their uses in our day to day lives can get scratchy. And believe us, their application in making things work is far, quite far then we can possibly think.
+					<br><br>
+					In our schools, we seldom are introduced to topics like the working of internet, how applications survive in the market or even how to develop a working logic for any 'functionality'. Today, data is the new oil and if used to full potential, data can optimize and enhance everyone's style of living. Such is the importance of technology, that we cannot imagine our lives without it.
+					<br><br>
+					Did you know that over 90% of the engineering students end up having a job in coding profile? You will be quite surprised to know that half the students of this category have a pretty inadequate amount of knowledge of how to proceed in such a field and follow the herd behaviour in making not well-thought-out decisions concerning their career.
+					<br><br>
+					For people like us, who are still figuring out what is the best possible path to success and getting quirky in making life decisions, this a perfect place to recognize and learn the true nature of tech. Come and learn the basics of technology, and explore a whole new realm with us.
+					<br><br>
+					The aim of this course is to give a brief introduction to the application of the most common forms of Technology in the real world, covering a wide spectrum of our day to day life use cases, to its contribution in big Multi National Companies
+					<br><br>
+					With the help of this course, the student will be able to:
+					<br><br>
+					-- Understand the working concept of Internet, Software Development
+					<br>
+					-- Understand what topics are needed to be covered to develop proficiency in Coding
+					<br>
+					-- Understand the economics of an application and how it survives in the competent world
+					<br>
+					-- Understand and implement the concepts of Machine Learning, Big Data
+					<br>
+					-- Relate to Cloud Computing, Internet of Things, Blockchain, 3-D printing, and other smart techniques
+					<br><br>
+					People might think diving into such a vast domain might get hectic and tiresome, but we assure you all of it is worth for the insights you will gain as this course ends.</p>
+			</div>
+
+			<a href="course1.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
+		</div>
+	</div>
+	<div class="moodal" id="moodal3" style="border-radius: 10px;flex-flow:row;max-height:fit-content" >
+		<div class="modalimg" style="background-image: url(card1.jpg);"></div>
+		<div class="modalcontent" >
+			<div class="modaltext">
+				<div class="exitbtn" onclick="modalclose()">&#10006;</div>
+				<h3>header</h3>
+				<p>Description</p>
+			</div>
+
+			<a href="course1.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
+		</div>
+	</div>
+	<div class="moodal" id="moodal2" style="border-radius: 10px;" >
+		<div class="modalimg" style="background-image: url(card2.jpg);"></div>
+		<div class="modalcontent">
+			<div class="modaltext">
+				<div class="exitbtn" onclick="modalclose1()">&#10006;</div>
+				<h4>Family</h4>
+				<p>Has anyone ever taught you what to order in a cafe or restaurant? Or anything about the table etiquettes? Moving forward in life you will need to know how to behave and how your body language should be because society is judgemental and that is a fact. We judge people’s skills by how they talk or present themselves. No matter how petty this sounds, it is a fact.
+<br><br>
+					So, how to create your first impression? Why do you hesitate while going for a date? Why do you feel nervous while delivering a presentation? And how shall the dressing be for any specific kind of event? We can argue that we will learn this with experience but if it matters so much why not know it at the right time. Being able to carry yourself elegantly is an art It expresses one’s personality and people acknowledge your presence.
+					<br><br>
+					Apart from that, there are other very basic life skills that define your everyday decisions. How to act and perform wisely? How to bargain with shopkeeper? How to tackle with your anger? How to manage your personal life with academics and corporate work? These are things that are not taught in a conventional education system but are highly needed.
+					<br><br>
+					We have tried to pack all these life hacks in this week-long workshop. We can guarantee you that you will see a change in yourself and you will be able to explore the best version of yourself.
+					</p>
+			</div>
+
+			<a href="course2.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
+		</div>
+	</div>
+	<div class="moodal" id="moodal32"  >
+		<div class="modalimg" style="background-image: url(card3.jpg);"></div>
+		<div class="modalcontent">
+			<div class="modaltext" >
+				<div class="exitbtn" onclick="modalclose2()">&#10006;</div>
+				<h4>Finance </h4>
+
+				<p>Have you seen The Big Short or The Wolf of the Wall Street or for that matter Hritik Roshan in Zindagi Na Milegi Dobaara? It sounds cool right to call yourself an investor and keep piling up money? Well, let me tell you for a fact that Warren Buffet, one of the greatest investors of our time, started investing in stocks at the age of 11. Yes, you heard it right, 11! I remember watching Doraemon and Chhota Bheem at that age.
+					<br><br>
+					Frankly speaking, investing isn’t about complex statistics or probabilistic models. It can start with a simple understanding of current news revolving around the company and their promoter group. You slowly develop a clear understanding of the company’s technical charts and fundamental valuation to grow into a decent investor. It’s all about the experience, patience and instincts.
+					 <br><br>
+					 How many schools teach us about the stock market or how to write a cheque or how to withdraw money from the bank. If we can dare to understand trigonometry at that age then we can surely give this a shot. In unprecedented times like this, investing is the best option to store and grow money and have a guaranteed income without a job. We need this!
+					 <br><br>
+					 You are a school kid or a college-going lad or a middle-age person re-thinking your life choices, this is the place where it all starts. Come and learn the basics of the stock market and earn a ton of money while having fun in this lockdown. Yes, ask the investors, lockdown can be fun!
+					 <br><br>
+					 The topics that will be covered in this 1-week workshop are as follows:
+					 <br>
+					</p>
+					 <ol>
+						 <li>Micro and Macro Economics</li>
+						 <li>Financial Markets and Investment</li>
+						 <li>Corporate Finance</li>
+						 <li>Stress Management and Happiness</li>
+						 <li>Portfolio Management Project</li>
+					</ol>
+					<p>
+
+						All of this might sound gibberish right now but let me tell you that after this 1 week you will have command over your money and have a general awareness of day-to-day economics.
+						<br><p>
+						You will also be given a real-time project that will boost your confidence and you will also gain experience in being an actual investor. Top project performer will be receiving exciting prizes.
+					</p>
+
+
+			</div>
+
+			<a href="course3.html" class="ourbutton" id="modalbutton1">Register</a>
+		</div>
+	</div>
+
+
+
+
+	<div class="dyncont" style="display: flex;">
+		<div class="dynswitch">
+			<div id="dyn1" onclick="Switch(1)" >Back to the Future</div>
+			<div id="dyn2" onclick="Switch(2)" >Tere Liye</div>
+			<div id="dyn3" onclick="Switch(3)" >We are gRoot</div>
+		</div>
+		<div class="dynscr">
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(bk1.PNG);"></div>
+					</div>
+				</div>
+					<div class="dynpara">An array of topics from a wide variety of domains.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder"><div class="dynimg" style="background-image: url(bk2.jpg);"></div></div>
+				</div>
+				<div class="dynpara">Creative, interactive and non-conventional methodologies for a clear understanding.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder"><div class="dynimg" style="background-image: url(bk3.jpg);"></div></div>
+				</div>
+				<div class="dynpara">7-days and 7-satisfactory hours to gain a plethora of experience</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder"><div class="dynimg" style="background-image: url(bk4.jpg);"></div></div>
+				</div>
+				<div class="dynpara">Join us on this wonderful journey of nurturing yourself. Hurry Up!! Only a few seats available, just kidding.</div>
+			</div>
+			<div style="display: flex;width:100%;justify-content:flex-end;">
+							<a href="index.html#card-cont"  class="search3" >Register</a>
+
+			</div>
+		</div>
+		<div class="dynscr" >
+
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(tl1.jpeg);"></div>
+					</div>
+				</div>
+				<div class="dynpara">Exclusive one-on-one mentoring just for you.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(tl2.jpg);"></div>
+					</div>
+				</div>
+				<div class="dynpara">NurtureCult is the solution to all your problems.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(tl3.jpg)"></div>
+					</div>
+				</div>
+				<div class="dynpara">We provide consulting for anything from education to personal life covering all genres of life.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(tl4.png);"></div>
+					</div>
+				</div>
+				<div class="dynpara">Time-flexibility in every session and free follow-ups for one week.</div>
+			</div>
+			<div style="display: flex;width:100%;justify-content:flex-end;">
+			<a href="tlPay.html" style="font-size: 1.2em;" class="search3">Book an appointment</a>
+			</div>
+		</div>
+		<div class="dynscr" >
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(gr1.jpg);"></div>
+					</div>
+				</div>
+				<div class="dynpara">Sharing a year-long ride to deal with all your ups and downs and career-related problems.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(gr2.jpg);"></div>
+					</div>
+				</div>
+				<div class="dynpara">Creating a cult in a wonderful year together and building a relationship for a lifetime.</div>
+			</div>
+			<div class="dyninfo">
+				<div>
+					<div class="dynholder">
+						<div class="dynimg" style="background-image: url(gr3.jpg); "></div>
+					</div>
+				</div>
+				<div class="dynpara">Career-related advice (eg. CV building, public speaking)Free exclusive webinars having prominent speakers, free mentorship, personal updates on all our activities and virtual parties.</div>
+			</div>
+			<div style="display: flex;width:100%;justify-content:flex-end;">
+				<a href="wrgrootPay.html"  class="search3">Join our family</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div style="background-color:#EAEDED;" class="screen" id="ourmission">
+		<div class="stitle"><h2  id="missions"></h2></div>
+		<div class="scont1" style="flex-flow: row wrap;justify-content:center;align-items:top;">
+			<div class="scont" >
+				<div class="sminicont" id="aboutusrecog">
+					<div class="slogo"></div>
+					<h3 >About Us</h3>
+				</div>
+				<p>Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).</p>
+			</div>
+			<div class="scont" id="ourmissionrecog">
+				<div class="sminicont">
+					<div class="slogo" style="background-image: url(mission2.png);"></div>
+					<h3 >Our Mission</h3>
+				</div>
+				<p>Figuring out your life in 20s is just so mainstream. We are not Dr Strange but let us walk you through all the possible outcomes of a future you because winning is not about competing, it is about finding the best version of yourself. So, let us come together (well not too close because “social distancing”) and create a platform to get your act together. Why cry later when you literally have the entire “teenage” for it.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="screen2" id="teamcontmain" style="flex-flow:column;padding:0px;">
+
+		<h2 id="tteam" style="line-height: 20px;"></h2>
+		<h3 id="teamsub" style="opacity: 0;">Founders</h3>
+
+		<div class="teamcontmain"  style="max-width:1300px;overflow:hidden;">
+			<div id="left-button" onclick="goleft()"></div>
+
+			<div class="teamcont" id="teamslider">
+				<div class="teamcard"  style="background-image: url(shashwat.jpg);">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Shashwat <br> Kumar</h5>
+							</div>
+							<div>
+								<h6>Industrial</h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/shashwat-kumar-1924b2148"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="teamcard" style="background-image: url(yash.jpg);">
+					<div class="teamdesc1">
+						<div class="teamdesc" >
+							<div>
+								<h5>Yash <br> Goyal</h5>
+							</div>
+							<div>
+								<h6>Entrepreneurship</h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/yg1998"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="teamcard" style="background-image: url(amanp.jpg);">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Aman <br> Priyaraj</h5>
+							</div>
+							<div>
+								<h6>Finance</h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/amanpriyaraj"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="teamcard" style="background-image: url(nama.jpg);">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Aman<br> Nama</h5>
+							</div>
+							<div>
+								<h6>Marketing</h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/aman-nama-303356154"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="teamcont" id="teamslider1">
+
+
+
+				<div class="teamcard" style="background-image: url(abhishek.jpg);">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Abhishek <br> Vinuraj</h5>
+							</div>
+							<div>
+								<h6></h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/yg1998"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="teamcard" style="background-image: url(bhawna.jpg);display:flex !important">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Bhawna<br> Bhardwaj</h5>
+							</div>
+							<div>
+								<h6></h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/aman-nama-303356154"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="right-button" onclick="goright()"></div>
+		</div>
+
+	</div>
+	</div>
+
+
+	<div id="contactus" style="background-color:#EAEDED;justify-content:center;padding-top:50px;flex-flow:row;font-size:15px ">
+		<div style="max-width:1000px;height:fit-content;flex-flow:row wrap; display:flex;box-sizing:border-box;justify-content:space-between;margin:auto;padding:20px">
+			<div class="postSpace" style="min-width:400px;width:50%;max-width:100%;display:flex;flex-flow:column;">
+				<div class="feel-free" style="border-bottom: 1px solid lightgray; flex-flow:row; display:flex"><h3>Feel free to contact our <span style="color: #F4D03F;">Enquiry desk</span>  anytime!</h3></div>
+				<div class="lower" style="display:flex;flex-flow:row;">
+					<div style="width:50%;text-align:left;border-right: 1px solid lightgrey; padding:10px">
+						<div class="title"> <span style="color:black">Give us a call</span> on</div>
+						<div class="content"><b>7893616574 <br> 8158065049</b></div>
+					</div>
+					<div style="min-width:50%;text-align:left;border-right: 0px solid lightgrey;padding:10px">
+						<div class="title"> <span style="color:black">E-mail</span> us to</div>
+						<div class="content"><b>support@nurturecult.com</b><br></div>
+					</div>
+				</div>
+			</div>
+		<form id="form" class="inputSpace" style="display: flex;min-width:400px;max-width:100%;margin:10px auto;">
+			<input id="namefield" required name="entry.37352416" placeholder="Name" >
+			<input id="emailfield" required name="entry.1878316948" placeholder="E-mail" >
+			<input id="subjectfield" required name="entry.1454958422" style="margin-bottom: 10px;" placeholder="Subject" >
+			<textarea id="messagefield" required name="entry.391054700" style="height: 100px;border-radius:5px;padding:5px"placeholder="Message"></textarea>
+			<div id="validaterror" style="color: rgb(204, 0, 0);opacity:0;margin:5px">Please fill the highlighted fields.</div>
+			<div id="success" style="color: green;opacity:0;display:none;margin:5px">Thank you! We will contact you soon.</div>
+			<div  onclick="contactsubmit()" class="search2" style="padding:8px 15px;margin:20px;margin-top:5px;margin-bottom:0px;margin-left:100%;transform:translateX(-100%); min-width:fit-content;border:none">Submit</div>
+		</form>
+</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer" style="background-color:#4b555f">
+		<div class="" style="width:90%;margin:auto;">
+		  <div class="row hide-on-small-only" style="display: block;">
+			  <div class="col s3 m6 f-resp-m" style="margin-top: 0px;">
+				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
+				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				</p>
+			  </div>
+			  <div class="col s3 m3 f-resp-l" style="margin-top: 0px;">
+				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
+				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				</p>
+			  </div>
+			  <div class="col s4 m3 ">
+				  <p class="footheaders" style="color:#F1C40F;padding-top:25px" > EXPLORE </p>
+				  <div class="row" style="display:block">
+				  <div class="col s6 explore-ll" style="height:min-content">
+					  <ul>
+						  <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
+						  <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+						  <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+						  <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li>
+					  </ul>
+				  </div>
+				  <div class="col s6 explore-ll">
+					  <ul>
+						  <li><a class="footerLink" href="blogPage.html">BLOG</a></li>
+						  <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
+						  <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
+					  </ul>
+				  </div>
+				  <div class="col s explore-l">
+					<ul>
+						<li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
+						  <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+						  <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+						  <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li><li><a class="footerLink" href="blogPage.html">BLOG</a></li>
+						<li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
+						<li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
+					</ul>
+				</div>
+
+				  </div>
+			  </div>
+			  <div class="col s6 m2 f-resp-m">
+				<p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				<p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+					support@nurturecult.com
+				</p>
+				<p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+				<div class="row " ></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			  
+				</div>
+			  <div class="col s6 m2 f-resp-l">
+				<p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				<p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+					support@nurturecult.com
+				</p>
+				
+				</div>
+				<div class="col s12 m3 hide-on-med-and-down f-resp-l">
+				<p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+				<div class="row " ></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			  </div>
+
+			</div>
+				<div class="col s12 m4 hide-on-med-and-up" style="margin-top: 0px;">
+					<h3 style="font-family: sansa;">NurtureCult</h3>
+					<p style="color:#c6c6c6;padding-top:25px">
+					  Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				  </p>
+				</div>
+				<div class="col s12 m2 hide-on-med-and-up">
+				  <p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				  <p class="phs" style="color:#c6c6c6;"> +91 (80) 30682559 <br>
+				  +91 (80) 33682560 <br>
+				  info@clustr.co.in
+				  </p>
+				  </div>
+
+
+		</div>
+		<div class="footer-copyright" style="padding:0px 0px;padding-right:10px">
+
+		  <div style="display: flex;flex-flow:row;margin:auto;justify-content:space-between;max-width: 1370px;width:89%">
+			  <div  style="font-size:0.7em;display:flex;flex-flow:row;min-width:max-content;align-items:center">
+				  <span class="hide-on-small-only">© 2020 NurtureCult. All rights reserved</span>
+				  &nbsp;&nbsp;
+				  <a href="T&C.html" style="text-decoration: underline;">Terms and Conditions</a>
+				  &nbsp;&nbsp;
+				  <a href="PrivacyPolicy.html" style="text-decoration: underline;">Privacy Policy</a>
+				</div>
+				  <div class="" style="display:flex;flex-flow:row nowrap;">
+					  <div class="f-logos hide-on-small-only" style="border-radius:0px;background-image:url(master.png)"></div>
+					  <div class="f-logos hide-on-small-only" style="border-radius:0px;background-image:url(visa.png)"></div>
+					  <div class="f-logos hide-on-small-only" style="background-image:url(gpay2.jpg)"></div>
+					  <div class="f-logos hide-on-small-only" style="background-image:url(paytm2.jpg)"></div>
+					  <div class="f-logos hide-on-small-only" style="background-image:url(upi2.jpg)"></div>
+				  </div>
+				  <div  style="display:flex;flex-flow:row nowrap;">
+					  <a href="https://facebook.com/nurturecult" class="f-logos" style="height:25px;width:25px;background-image:url(fb2.jpg)"></a>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(insta2.jpg)"></div>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(linkedin2.jpg)"></div>
+				  </div>
+		  </div>
+	  </div>
+  </footer>
+
+  <script src="skrollr.js"></script>
+	    <!--JavaScript at end of body for optimized loading-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+		<!-- Include jQuery -->
+
+		<!-- Include Multislider -->
+		<script src="js/multislider.min.js"></script>
+
+		<!-- Initialize element with Multislider -->
+		<script>
+			function modalclose(){
+				document.getElementById("moodal1").style.display =" none"
+				document.body.style.overflowY ="visible"
+
+			}
+			function modalopen(){
+				document.getElementById("moodal1").style.display =" flex"
+				document.body.style.overflowY ="hidden"
+			}
+			function modalclose1(){
+				document.getElementById("moodal2").style.display =" none"
+				document.body.style.overflowY ="visible"
+
+			}
+			function modalopen1(){
+				document.getElementById("moodal2").style.display =" flex"
+				document.body.style.overflowY ="hidden"
+
+			}
+			function modalclose2(){
+				document.getElementById("moodal32").style.display =" none"
+				document.body.style.overflowY ="visible"
+
+			}
+			function modalopen2(){
+				document.getElementById("moodal32").style.display =" flex"
+				document.body.style.overflowY ="hidden"
+
+			}
+			
+			function goright(){
+				document.getElementById("teamslider").style.transform ="translateX(-50%)"
+				document.getElementById("teamslider").style.opacity ="0"
+				document.getElementById("teamsub").style.opacity ="0"
+				setTimeout(() => {
+					document.getElementById("teamslider").style.display ="none"
+					document.getElementById("teamslider1").style.display ="flex";
+					setTimeout(() => {
+						document.getElementById("teamslider1").style.opacity ="1";
+						document.getElementById("teamslider1").style.transform ="translateX(0px)";
+						document.getElementById("teamsub").innerHTML ="Vice Presidents"
+						document.getElementById("teamsub").style.opacity ="1"
+					}, 100);
+				}, 100);
+			  }
+			  function goleft(){
+				document.getElementById("teamslider1").style.transform ="translateX(50%)"
+				document.getElementById("teamslider1").style.opacity ="0"
+				document.getElementById("teamsub").style.opacity ="0"
+				setTimeout(() => {
+					document.getElementById("teamslider1").style.display ="none"
+					document.getElementById("teamslider").style.display ="flex";
+					setTimeout(() => {
+						document.getElementById("teamslider").style.opacity ="1";
+						document.getElementById("teamslider").style.transform ="translateX(0px)";
+						document.getElementById("teamsub").innerHTML ="Founders"
+						document.getElementById("teamsub").style.opacity ="1"
+					}, 100);
+				}, 250);
+			}
+		
+		</script>
+
+		<script >
+			
+
+
+
+
+			  $(".hovers").hover3d({
+				selector: ".hov",
+				sensitivity:"10",
+				perspective:"400"
+
+			});
+
+
+		</script>
+
+
+
+	 <!--JavaScript at end of body for optimized loading-->
+	 <script src="anime.min.js"></script>
+	 <script>
+		function showstall(){
+  
+			for (let i = 0; i < document.getElementsByClassName("stall").length; i++) {
+			  const element = document.getElementsByClassName("stall")[i];
+			  element.style.opacity = 1
+			}
+			
+			}
+
+		modal = document.getElementById("moodal1");
+
+		window.onclick = function(event) {
+			if (event.target == document.getElementById("moodal1")) {
+				document.getElementById("moodal1").style.display = "none";
+			}
+		  }
+
+		function drawsvg(){
+			setTimeout(() => {
+				document.getElementById("svg").style.opacity ="1"
+			document.getElementById("svg").style.opacity ="1"
+				var lineDrawing2 = anime({
+					targets: ' .lines ',
+					strokeDashoffset: [anime.setDashoffset, 0],
+					easing: 'easeInOutSine',
+					duration: 1600,
+					delay: function(el, i) { return i * 90 },
+					direction: 'alternate',
+					loop: false
+			  });
+			  var lineDrawing4 = anime({
+				targets: ' .lines ',
+				easing: 'easeInOutSine',
+				duration: 1600,
+				fill: ["#414141"],
+				delay: function(el, i) { return 125*24},
+				direction: 'alternate',
+				loop: false
+			});
+			}, 500);
+		}
+      var lineDrawing = anime({
+        targets: ' .line',
+        easing: 'easeInOutSine',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        duration: 600,
+         delay: function(el, i) { return 1200 + i * 1200 },
+        direction: 'alternate',
+        loop: false
+  });
+  var lineDrawing0 = anime({
+    targets: ' .line',
+    easing: 'easeInOutSine',
+     fill: ["rgb(19, 35, 48)"],
+    duration: 600,
+     delay: function(el, i) { return 2400 + i * 100 },
+    direction: 'alternate',
+    loop: false
+});
+	 </script>
+	 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- <script src="particles.min.js"></script> -->
+	<script>
+		particlesJS('particles-js',{
+			"particles": {
+			  "number": {
+				"value": 106,
+				"density": {
+				  "enable": true,
+				  "value_area": 200
+				}
+			  },
+			  "color": {
+				"value": "#909090"
+			  },
+			  "shape": {
+				"type": "circle",
+				"stroke": {
+				  "width": 0,
+				  "color": "#000000"
+				},
+				"polygon": {
+				  "nb_sides": 5
+				},
+				"image": {
+				  "src": "img/github.svg",
+				  "width": 100,
+				  "height": 100
+				}
+			  },
+			  "opacity": {
+				"value": 0.9,
+				"random": false,
+				"anim": {
+				  "enable": false,
+				  "speed": 1,
+				  "opacity_min": 0.1,
+				  "sync": false
+				}
+			  },
+			  "size": {
+				"value": 4,
+				"random": true,
+				"anim": {
+				  "enable": false,
+				  "speed": 40,
+				  "size_min": 0.1,
+				  "sync": false
+				}
+			  },
+			  "line_linked": {
+				"enable": true,
+				"distance": 150,
+				"color": "#b3b3b3",
+				"opacity": 0.7,
+				"width": 1
+			  },
+			  "move": {
+				"enable": true,
+				"speed": 9,
+				"direction": "none",
+				"random": false,
+				"straight": false,
+				"out_mode": "out",
+				"bounce": false,
+				"attract": {
+				  "enable": false,
+				  "rotateX": 600,
+				  "rotateY": 1200
+				}
+			  }
+			},
+			"interactivity": {
+			  "detect_on": "canvas",
+			  "events": {
+				"onhover": {
+				  "enable": false,
+				  "mode": "repulse"
+				},
+				"onclick": {
+				  "enable": false,
+				  "mode": "push"
+				},
+				"resize": true
+			  },
+			  "modes": {
+				"grab": {
+				  "distance": 400,
+				  "line_linked": {
+					"opacity": 1
+				  }
+				},
+				"bubble": {
+				  "distance": 400,
+				  "size": 40,
+				  "duration": 2,
+				  "opacity": 8,
+				  "speed": 3
+				},
+				"repulse": {
+				  "distance": 200,
+				  "duration": 0.4
+				},
+				"push": {
+				  "particles_nb": 4
+				},
+				"remove": {
+				  "particles_nb": 2
+				}
+			  }
+			},
+			"retina_detect": true
+		  });
+
+	</script>
+
+	<script >
+
+		
+
+		  $(".hovers").hover3d({
+			selector: ".hov",
+			sensitivity:"10",
+			perspective:"400"
+
+		});
+		  Switch(1);
+
+	</script>
+	<script src="common.js"></script>
+	<script>
+
+		element = document.getElementById("logoscontainer")
+vid = document.getElementById("video")
+vid.controls = false
+Width = document.getElementById("logoscontainer").offsetWidth
+element.style.width = Width + "px"
+maximize = false
+function videostart(){
+	
+  if (maximize = 1) {
+    maximize = true
+	element.style.opacity = '0'
+    for (let x = 0; x < Width; x++) {
+      element.style.width = Width - x + "px"
+	}
+	
+    setTimeout(() => {
+    element.style.display = "none"
+	vid.style.borderRadius = "15px"
+	if(screen.width < 780){
+		
+		vid.style.width = "80vw"
+    	vid.style.height = "40vw"
+	}else{
+		
+		vid.style.width = "780px"
+		vid.style.height = "360px"
+
+	}
+    vid.play();
+    vid.controls = true
+    }, 1000);
+  }
+}
+function videostop(){
+  if (maximize) {
+  maximize = false
+  element.style.display = "flex"
+  vid.style.borderRadius = "10px"
+  vid.controls = false
+  vid.style.width = "260px"
+  vid.style.height = "120px"
+  setTimeout(() => {
+    for (let x = 0; x <= Width; x++) {
+      element.style.width = x + "px"
+    }
+    setTimeout(() => {
+      element.style.opacity = '1'
+    }, 500);
+  }, 1000);
+  }
+
+}
+
+
+function videoset(){
+  const newtarget = document.getElementById("logocont");
+  function handleIntersection(entries) {
+    entries.map((entry) => {
+      if (!entry.isIntersecting) {
+        videostop();
+        vid.pause()
+      }
+    });
+
+  }
+  const newoptions = {
+      threshold: 0.1,
+    }
+  const observer = new IntersectionObserver(handleIntersection,newoptions);
+
+  observer.observe(newtarget);
+
+}
+
+
+		getneww();getnewww();videoset();get51();getnew();get4();get11();get41();get42();Switch(1);
+	</script>
+	<script>
+		function contactsubmit(){
+			var field1 = $("#namefield").val();
+            var field2 = $("#emailfield").val();
+            var field3 = $("#subjectfield").val();
+			var field4 = $("textarea#messagefield").val();
+			if(field1 == ""){
+				document.getElementById("namefield").style.borderBottomColor = "red "
+				document.getElementById("validaterror").style.opacity = "1"
+			}else{
+				document.getElementById("namefield").style.borderBottomColor = "lightgray"
+			}
+			if(field2 == ""){
+				document.getElementById("emailfield").style.borderBottomColor = "red "
+				document.getElementById("validaterror").style.opacity = "1"
+			}else{
+				document.getElementById("emailfield").style.borderBottomColor = "lightgray "
+			}
+			if(field3 == ""){
+				document.getElementById("subjectfield").style.borderBottomColor = "red "
+				document.getElementById("validaterror").style.opacity = "1"
+			}else{
+				document.getElementById("subjectfield").style.borderBottomColor = "lightgray"
+			}
+			if(field4 == ""){
+				document.getElementById("messagefield").style.border = "red 1px solid "
+			}else{
+				document.getElementById("messagefield").style.border = "lightgray 1px solid"
+			}
+			if(field1 !== "" && field2 !== "" && field3 !== "" && field4 !== ""){
+
+		$.ajax({
+
+			url: "https://docs.google.com/forms/d/e/1FAIpQLScp-a4yF2OC4cxtzlBxmPbqvxgiOLvcP2WVe18rmrW6_aXKUA/formResponse?",
+			data: {"entry.37352416": field1, "entry.1878316948": field2, "entry.1454958422": field3, "entry.391054700": field4},
+			type: "POST",
+			dataType: "xml",
+			success: function(d)
+			{
+			},
+			error: function(x, y, z)
+				{
+
+
+					document.getElementById("validaterror").style.display = "none "
+					document.getElementById("success").style.display = "flex "
+					document.getElementById("success").style.opacity = "1 "
+					document.getElementById("namefield").value = ""
+					document.getElementById("emailfield").value = ""
+					document.getElementById("subjectfield").value = ""
+					document.getElementById("messagefield").value = ""
+				}
+		});
+		return false;
+	}
+	}
+	</script>
+	<script src="common1.js"></script>
+	</body>
+ </html>

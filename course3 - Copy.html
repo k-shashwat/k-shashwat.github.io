@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	 <link rel="stylesheet" href="header.css">
+	 <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  
+  <style>
+    
+    .container{
+        width: 50%;
+    }
+    .search{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        border: none;
+        font-size: medium;
+        background-color: rgb(36, 36, 36);
+        box-shadow: -2px 2px 2px 0px rgb(36, 36, 36);
+    
+    }
+    
+    
+  </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+		
+		
+        <div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
+            <a id="logo" class="sidenav-trigger button-collapse test" data-activates="slide-out" style="margin-left:40px;"></a>
+            <div class="menu" style="font-family:Graphik,sans-serif;">
+                <a href="index.html#homeMain" onmouseover="colorChange(this)" onmouseout="colorBack(this)" class="links">Home</a>
+                <div class="links" id="linkcont1" style="width:80px" onmouseover="expand1();" onmouseout="colorBack(this);deExpand1()" >
+                    <a class="dlinks" id="expand" onmouseover="colorChange(this)" onmouseout="colorBack(this)" >Services</a>
+                    <a href="index.html#menu2" class="dlinks" >Back to the future</a>
+                    <a href=" index.html#menu2" class="dlinks">Tere Liye</a>
+                    <a href="index.html#newcont" class="dlinks">We are gRoot</a>
+                </div>
+                <a href="blogPage.html" onmouseover="colorChange(this)" onmouseout="colorBack(this)" class="links">Blog</a>
+                <div class="links" id="linkcont" style="width:80px" onmouseover="expand();" onmouseout="colorBack(this);deExpand()" >
+                    <a class="dlinks" id="expand" onmouseover="colorChange(this);expand()" onmouseout="colorBack(this)" >About Us</a>
+                    <a href="index.html#ourmission" class="dlinks" >Our Mission</a>
+                    <a href=" index.html#teamcontmain" class="dlinks">Our Team</a>
+                    <!-- <a href="index.html#career" class="dlinks">Careers</a> -->
+                </div>
+                <a class="links" href="index.html#contactus"  onmouseover="colorChange(this)" onmouseout="colorBack(this)">Contact Us</a>
+                <div class="hamburger"></div>
+                
+            </div>
+        </div>
+
+	</div>
+<br><br><br><br>
+ <div class="container"> 
+     <h2>Enrollment</h2> 
+     <p>Please fill in the necessary details for course enrollment and Enroll upon completion.</p>
+     <p><small>Please note that all fields are mandatory</small></p>
+     <form action="" class="needs-validation" id="regForm" novalidate>
+     <div class="form-group"> 
+     <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required> 
+     <div class="valid-feedback">: )</div>
+     <div class="invalid-feedback">Please fill out this field.</div></div>
+     <div class="form-group"> 
+     <input type="email" class="form-control" id="eml" placeholder="Enter E-mail" name="eml" required>
+     <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div>
+     <div class="form-group">  <input type="text" class="form-control" id="phn" placeholder="Enter Your Phone Number" name="phn" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group">  <input type="text" class="form-control" id="loc" placeholder="Enter Your Current Location" name="loc" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group"> <input type="text" class="form-control" id="shcl" placeholder="Enter School/College Name" name="shcl" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group">  <input type="text" class="form-control" id="clssyr" placeholder="Enter Class/Year of Study" name="clssyr" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div><button type="reset" class="btn btn-primary search">Reset</button> <button type="submit" class="btn btn-success enroll">Proceed to payment</button> </form> <div class="modal fade" id="myModal" role="dialog"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button> <h4 class="modal-title"></h4> </div><div class="modal-body"> <p id="error"></p><p id="success"><span id="gentext"></span><span id="tranid" style="" ></span></p><p id="noteid"></p></div><div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div></div></div></div>
+ </div>
+<br><br><br>
+
+<footer class="page-footer" style="background-color:#4b555f">
+    <div class="" style="width:90%;margin:auto;">
+      <div class="row hide-on-small-only" style="display: block;">
+          <div class="col s4 m4" style="margin-top: 0px;">
+              <h3 style="font-family: sansa;">NurtureCult</h3>
+              <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+                Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+            </p>
+          </div>
+          <div class="col s4 m3 ">
+              <p class="footheaders" style="color:#F1C40F;padding-top:25px" > EXPLORE </p>
+              <div class="row" style="display:block">
+              <div class="col s6 explore-ll" style="height:min-content">
+                  <ul>
+                      <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
+                      <li><a class="footerLink" href="index.html#menu2">TERE LIYE</a></li>
+                      <li><a class="footerLink" href="index.html#menu2">BACK TO FUTURE</a></li>
+                      <li><a class="footerLink" href="index.html#newcont">WE ARE GROOT</a></li>
+                  </ul>
+              </div>
+              <div class="col s6 explore-ll">
+                  <ul>
+                      <li><a class="footerLink" href="index.html#teamcontmain">BLOG</a></li>
+                      <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
+                      <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
+                  </ul>
+              </div>
+              <div class="col s explore-l">
+                <ul>
+                    <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
+                    <li><a class="footerLink" href="index.html#menu2">TERE LIYE</a></li>
+                    <li><a class="footerLink" href="index.html#menu2">BACK TO FUTURE</a></li>
+                    <li><a class="footerLink" href="index.html#newcont">WE ARE GROOT</a></li>
+                    <li><a class="footerLink" href="index.html#teamcontmain">BLOG</a></li>
+                    <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
+                    <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
+                </ul>
+            </div>
+              
+              </div>
+          </div>
+          <div class="col s6 m2 ">
+            <p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+            <p class="phs" style="color:#c6c6c6;"> +91 (80) 30682559 <br>
+            +91 (80) 33682560 <br>
+            info@clustr.co.in
+            </p>
+            </div>
+            <div class="col s12 m3 hide-on-med-and-down ">
+            <p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+            <div class="row " ></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          
+        </div>
+            <div class="col s12 m4 hide-on-med-and-up" style="margin-top: 0px;">
+                <h3 style="font-family: sansa;">NurtureCult</h3>
+                <p style="color:#c6c6c6;padding-top:25px">
+                  Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+              </p>
+            </div>
+            <div class="col s12 m2 hide-on-med-and-up">
+              <p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+              <p class="phs" style="color:#c6c6c6;"> +91 (80) 30682559 <br>
+              +91 (80) 33682560 <br>
+              info@clustr.co.in
+              </p>
+              </div>
+              
+            
+    </div>
+    <div class="footer-copyright" style="padding:0px 0px;padding-right:10px">
+      
+      <div style="display: flex;flex-flow:row;margin:auto;justify-content:space-between;max-width: 1370px;width:89%">
+          <div  style="font-size:0.7em;display:flex;flex-flow:row;min-width:max-content;align-items:center">
+              <span class="hide-on-small-only">© 2020 NurtureCult. All rights reserved</span>
+              &nbsp;&nbsp; 
+              <a href="T&C.html" style="text-decoration: underline;">Terms and Conditions</a>
+              &nbsp;&nbsp; 
+              <a href="PrivacyPolicy.html" style="text-decoration: underline;">Privacy Policy</a>
+            </div>
+              <div class="" style="display:flex;flex-flow:row nowrap;">
+                  <div class="f-logos hide-on-small-only" style="border-radius:0px;background-image:url(master.png)"></div>
+                  <div class="f-logos hide-on-small-only" style="border-radius:0px;background-image:url(visa.png)"></div>
+                  <div class="f-logos hide-on-small-only" style="background-image:url(gpay2.jpg)"></div>
+                  <div class="f-logos hide-on-small-only" style="background-image:url(paytm2.jpg)"></div>
+                  <div class="f-logos hide-on-small-only" style="background-image:url(upi2.jpg)"></div>
+              </div>
+              <div  style="display:flex;flex-flow:row nowrap;">
+                  <div class="f-logos" style="background-image:url(fb2.jpg)"></div>
+                  <div class="f-logos" style="background-image:url(insta2.jpg)"></div>
+                  <div class="f-logos" style="background-image:url(linkedin2.jpg)"></div>
+              </div>
+      </div>
+  </div>
+</footer>
+<script>
+
+/* PLEASE PUT YOUR PAYMENT SECRETS HERE */
+
+/*Payment Public Key*/
+var keyCustom= 'rzp_live_yNnzSMBo7OM7Fq'; /*rzp_test_GkRuTpPJwzuZKb*/
+
+/*Amount Payable (in Paisa, eg, 2 rupee and 40 paisa would be 240)*/
+var amountCustom= 25000; /*in paisa*/
+
+/*Merchant Name*/
+var merchantNameCustom= "FundaSession"; 
+
+/*Description*/
+var descriptionCustom= "Course"; 
+ 
+ /*Logo for left top image*/
+var imageCustom= "../logorp.jpg";   /* Your logo url */     
+      
+
+/*  END SECRETS   */
+
+
+$("#myModal").modal({show:!1});(function(){window.addEventListener("load",function(){var c=document.getElementsByClassName("needs-validation");Array.prototype.filter.call(c,function(b){b.addEventListener("submit",function(a){!1===b.checkValidity()?(a.preventDefault(),a.stopPropagation()):(a.preventDefault(),a.stopPropagation(),callRazorPayScript());b.classList.add("was-validated")},!1)})},!1)})();
+var loadExternalScript=function(c){var b=$.Deferred(),a=document.createElement("script");a.async="async";a.type="text/javascript";a.src=c;a.onload=a.onreadystatechange=function(e,d){if(!a.readyState||/loaded|complete/.test(a.readyState))d?b.reject():b.resolve()};a.onerror=function(){b.reject()};$("head")[0].appendChild(a);return b.promise()},callRazorPayScript=function(){loadExternalScript("https://checkout.razorpay.com/v1/checkout.js").then(function(){var c={key:keyCustom,protocol:"https",hostname:"api.razorpay.com",
+amount:amountCustom,name:merchantNameCustom,description:descriptionCustom,image:imageCustom,prefill:{name:$("#name").val().trim(),email:$("#eml").val().trim(),contact:$("#phn").val().trim()},theme:{color:"#b9a76e"},handler:function(b,a){var h=b.razorpay_payment_id;$("#regForm").trigger("reset");$(".modal-title").text("Your Payment request is received successfully!");$("#gentext").html("Your transaction id is : ");$("#tranid").html("<b>"+h+"</b>");$("#noteid").text("Please keep this transaction id for any future reference");$("#myModal").modal("show")}};
+window.rzpay=new Razorpay(c);rzpay.open()})};
+ 
+  
+
+  
+</script>
+<script src="common.js"></script>
+</body>
+</html>
